@@ -1,0 +1,736 @@
+{
+ "book": {
+  "id": 72107,
+  "title": "شازده کوچولو",
+  "sourceBookId": 0,
+  "index": true,
+  "hasPhysicalEdition": false,
+  "canonicalId": 72107,
+  "correspondingBookId": 0,
+  "subtitle": "در دو اجرا: ۱- خوانش کامل کتاب ۲-اقتباس نمایشی، با موسیقی و آواز",
+  "lastUpdate": "2026-08-26T15:06:50.66",
+  "creationDate": "2020-04-15T16:26:17.343",
+  "persianShortDate": "فروردین ۱۳۹۹",
+  "description": "کتاب صوتی شازده کوچولو، شاهکار بی‌نظیر آنتوان دوسنت اگزوپه‌ری، داستان سفر یک شهریار کوچک از سیاره‌ی خودش به زمین است. شازده کوچولو تمام چیزهایی را که دیده و شنیده، برای دوستش، یک خلبان هواپیما تعریف می‌کند.\nنسخه صوتی شازده کوچولو در دو اجرا: ۱- خوانش کامل کتاب ۲-اقتباس نمایشی، با موسیقی و آواز با ترجمه‌ی عالی احمد شاملو و صدای جمعی از گویندگان توانا در اختیارتان قرار دارد تا خاطره خوبی برایتان رقم بزند.\nدرباره‌ی کتاب صوتی شازده کوچولو\nآنتوان دو سنت اگزوپه‌ری، با نوشتن داستان بی‌نظیر شازده کوچولو...",
+  "PublisherID": 156,
+  "publisherSlug": "publisher/انتشارات-نگاه",
+  "publisherShouldIndex": true,
+  "price": 15000.0,
+  "numberOfPages": 0,
+  "rating": 4.368980405181,
+  "rates": [
+   {
+    "value": 1.0,
+    "count": 548
+   },
+   {
+    "value": 2.0,
+    "count": 241
+   },
+   {
+    "value": 3.0,
+    "count": 246
+   },
+   {
+    "value": 4.0,
+    "count": 393
+   },
+   {
+    "value": 5.0,
+    "count": 4594
+   }
+  ],
+  "rateDetails": [
+   {
+    "id": 1,
+    "title": "متن روان",
+    "point": 1.395360564800807
+   },
+   {
+    "id": 2,
+    "title": "جذابیت",
+    "point": 1.4094805849722642
+   }
+  ],
+  "types": [
+   {
+    "id": 3,
+    "name": "صوتی",
+    "price": 15000.0,
+    "beforeOffPrice": 0.0
+   }
+  ],
+  "beforeOffPrice": 0,
+  "isRtl": true,
+  "showOverlay": true,
+  "destination": 0,
+  "type": "Audio",
+  "productClass": 2,
+  "prefix": "کتاب صوتی",
+  "noFollow": false,
+  "pdpSlug": "audiobook",
+  "refId": "",
+  "coverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+  "shareUri": "https://img.taaghche.com/share/72107.jpg",
+  "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/72107",
+  "publisher": "انتشارات نگاه",
+  "authors": [
+   {
+    "id": 2072,
+    "firstName": "آنتوان",
+    "lastName": "دوسنت اگزوپری",
+    "type": 1,
+    "slug": "author/آنتوان-دوسنت-اگزوپری",
+    "shouldIndex": true
+   },
+   {
+    "id": 752,
+    "firstName": "احمد",
+    "lastName": "شاملو",
+    "type": 2,
+    "slug": "author/احمد-شاملو",
+    "shouldIndex": true
+   },
+   {
+    "id": 6810,
+    "firstName": "جمعی از",
+    "lastName": "گویندگان",
+    "type": 4,
+    "slug": "author/جمعی-از-گویندگان",
+    "shouldIndex": true
+   }
+  ],
+  "files": [
+   {
+    "id": 392473,
+    "size": 83023066,
+    "type": 8,
+    "bookId": 72107,
+    "sequenceNo": 0,
+    "duration": 5189,
+    "title": "اجرای اول"
+   },
+   {
+    "id": 1110074,
+    "size": 2906727,
+    "type": 6,
+    "bookId": 72107,
+    "sequenceNo": 0
+   }
+  ],
+  "labels": [
+   {
+    "tagID": 5109,
+    "tag": "کمپین دنیای قشنگ تو - ۹۹",
+    "shouldIndex": false
+   }
+  ],
+  "categories": [
+   {
+    "id": 60,
+    "parent": 58,
+    "title": "داستان کوتاه",
+    "audioTitle": "داستان کوتاه",
+    "slug": "category/کتاب-داستان-کوتاه",
+    "audioSlug": "category/کتاب-داستان-کوتاه-صوتی",
+    "hasAudioSection": true,
+    "firstAudioVisibleId": 60,
+    "shouldIndex": true,
+    "audioShouldIndex": true
+   },
+   {
+    "id": 68,
+    "parent": 58,
+    "title": "داستان خارجی",
+    "audioTitle": "داستان خارجی",
+    "slug": "category/کتاب-داستان-خارجی",
+    "audioSlug": "category/کتاب-داستان-صوتی-خارجی",
+    "hasAudioSection": true,
+    "firstAudioVisibleId": 68,
+    "shouldIndex": true,
+    "audioShouldIndex": true
+   }
+  ],
+  "seriesAndTagCollections": [
+   {
+    "id": 9035,
+    "name": "ادبیات فرانسه",
+    "kind": 2,
+    "slug": "tag/ادبیات-فرانسه"
+   },
+   {
+    "id": 14695,
+    "name": "۱۰۰ کتاب قرن لوموند",
+    "kind": 2,
+    "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+   }
+  ],
+  "subscriptionAvailable": false,
+  "state": 1,
+  "encrypted": true,
+  "currencyPrice": 2.03,
+  "currencyBeforeOffPrice": 0.0,
+  "sumDurationSeconds": 10621,
+  "rateCounts": 6022,
+  "isEpub": false,
+  "descriptionLastUpdate": "2026-08-26T14:52:19.05"
+ },
+ "comments": [
+  {
+   "id": 658716,
+   "accountId": 1493437,
+   "verifiedAccount": false,
+   "nickname": "فقط خدا",
+   "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+   "bookId": 72107,
+   "bookCoverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+   "bookType": "Audio",
+   "bookName": "شازده کوچولو",
+   "creationDate": "1399/02/08",
+   "rate": 5.0,
+   "latestReplies": [
+    {
+     "id": 0,
+     "accountId": 8524708,
+     "verifiedAccount": false,
+     "nickname": "کاربر 8524708",
+     "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+     "bookId": 72107,
+     "bookCoverUri": "https://img.taaghche.com/frontCover/72107.jpg",
+     "bookType": "Text",
+     "bookName": "شازده کوچولو",
+     "creationDate": "1405/06/03",
+     "rate": 0.0,
+     "latestReplies": [],
+     "repliesCount": 0,
+     "likeCount": 0,
+     "dislikeCount": 0,
+     "comment": "من نت ندارم",
+     "isLiked": false,
+     "isDisliked": false,
+     "rateDetails": [],
+     "recommendation": 0
+    }
+   ],
+   "repliesCount": 16,
+   "likeCount": 1128,
+   "dislikeCount": 94,
+   "comment": "شازده کوچولو فوق العادس👌👌👌",
+   "isLiked": false,
+   "isDisliked": false,
+   "rateDetails": [
+    {
+     "id": 1,
+     "title": "متن روان",
+     "point": 5.0
+    },
+    {
+     "id": 2,
+     "title": "جذابیت",
+     "point": 5.0
+    }
+   ],
+   "recommendation": 1
+  },
+  {
+   "id": 675130,
+   "accountId": 1935254,
+   "verifiedAccount": false,
+   "nickname": "کاربر ۱۹۳۵۲۵۴ Marsin",
+   "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+   "bookId": 72107,
+   "bookCoverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+   "bookType": "Audio",
+   "bookName": "شازده کوچولو",
+   "creationDate": "1399/02/28",
+   "rate": 5.0,
+   "latestReplies": [
+    {
+     "id": 0,
+     "accountId": 12336797,
+     "verifiedAccount": false,
+     "nickname": "Tina",
+     "profileImageUri": "https://img.taaghche.com/avatar/avatar-03.jpg",
+     "bookId": 72107,
+     "bookCoverUri": "https://img.taaghche.com/frontCover/72107.jpg",
+     "bookType": "Text",
+     "bookName": "شازده کوچولو",
+     "creationDate": "1405/05/22",
+     "rate": 0.0,
+     "latestReplies": [],
+     "repliesCount": 0,
+     "likeCount": 0,
+     "dislikeCount": 0,
+     "comment": "خیلی کتاب قشنگیه و اصلا به درد کودک نمیخوره از درکش خارجه",
+     "isLiked": false,
+     "isDisliked": false,
+     "rateDetails": [],
+     "recommendation": 0
+    }
+   ],
+   "repliesCount": 31,
+   "likeCount": 638,
+   "dislikeCount": 65,
+   "comment": "این کتاب واقعاً عالیه و به دردمان نوجوانان میخوره چون ما میتونیم این کتاب رو درک کنیم عالیهههه",
+   "isLiked": false,
+   "isDisliked": false,
+   "rateDetails": [
+    {
+     "id": 1,
+     "title": "متن روان",
+     "point": 5.0
+    },
+    {
+     "id": 2,
+     "title": "جذابیت",
+     "point": 5.0
+    }
+   ],
+   "recommendation": 1
+  }
+ ],
+ "commentsCount": 1941,
+ "relatedBooks": [
+  {
+   "type": 1,
+   "title": "آثار مشابه",
+   "backgroundStyle": 0,
+   "bookData": {
+    "books": [
+     {
+      "id": 117806,
+      "title": "قلعه حیوانات",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-08-11T17:05:17.107",
+      "creationDate": "2022-02-15T21:37:30.52",
+      "persianShortDate": "بهمن ۱۴۰۰",
+      "description": "کتاب صوتی قلعه حیوانات نوشته جورج اورول و با صدای عطیه بادامچی در نشر مسیر سبز رشد منتشر شده است.\nدرباره کتاب قلعه حیوانات\nحیوانات مزرعه آقای جونز در یک تصمیم انقلابی اوضاع را تغییر می‌دهند و صاحب مزرعه را بیرون می‌کنند و خود اداره آن را به دست می‌گیرند تا برابری، رفاه و آسایش را برای حیوانات مزرعه فراهم شود. رهبری این جنبش را گروهی از خوک‌ها به عهده می‌گیرند اما مدت زمان طولانی‌ای نمی‌گذرد که آن‌ها هم به رهبری خوکی به اسم «ناپلئون» شروع به بهره‌کشی از حیوانات دیگر می‌کنند و مشکلات جدید به وجود ...",
+      "PublisherID": 3490,
+      "publisherSlug": "نشر-مسیر-سبز-رشد",
+      "publisherShouldIndex": true,
+      "price": 17400.0,
+      "numberOfPages": 0,
+      "rating": 4.22883597883598,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 76
+       },
+       {
+        "value": 2.0,
+        "count": 43
+       },
+       {
+        "value": 3.0,
+        "count": 32
+       },
+       {
+        "value": 4.0,
+        "count": 86
+       },
+       {
+        "value": 5.0,
+        "count": 519
+       }
+      ],
+      "rateDetails": [
+       {
+        "id": 1,
+        "title": "متن روان",
+        "point": 1.6125461254612545
+       },
+       {
+        "id": 2,
+        "title": "جذابیت",
+        "point": 1.5904059040590406
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 17400.0,
+        "beforeOffPrice": 29000.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/off40withsub.png",
+      "offSticker": "https://img.taaghche.com/sticker/off40.png",
+      "beforeOffPrice": 29000,
+      "offText": "تخفیف ۴۰٪",
+      "priceColor": "#ff0000",
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "related-book-goldoon-72107.1",
+      "coverUri": "https://img.taaghche.com/audioCover/117806.jpg",
+      "shareUri": "https://img.taaghche.com/share/117806.jpg",
+      "shareText": "«قلعه حیوانات» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/117806",
+      "publisher": "نشر مسیر سبز رشد",
+      "authors": [
+       {
+        "id": 28030,
+        "firstName": "جورج",
+        "lastName": "اورول",
+        "type": 1,
+        "slug": "author/جورج-اورول",
+        "shouldIndex": true
+       },
+       {
+        "id": 30169,
+        "firstName": "عطیه",
+        "lastName": "بادامچی",
+        "type": 4,
+        "slug": "author/عطیه-بادامچی",
+        "shouldIndex": true
+       }
+      ],
+      "files": [
+       {
+        "id": 664946,
+        "size": 23882012,
+        "type": 8,
+        "bookId": 117806,
+        "sequenceNo": 0,
+        "duration": 597,
+        "title": "فصل اول"
+       },
+       {
+        "id": 1095075,
+        "size": 570430,
+        "type": 6,
+        "bookId": 117806,
+        "sequenceNo": 0
+       }
+      ],
+      "labels": [],
+      "categories": [
+       {
+        "id": 59,
+        "parent": 58,
+        "title": "رمان",
+        "audioTitle": "رمان",
+        "slug": "کتاب-رمان",
+        "audioSlug": "کتاب-رمان-صوتی",
+        "hasAudioSection": true,
+        "firstAudioVisibleId": 59,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       },
+       {
+        "id": 68,
+        "parent": 58,
+        "title": "داستان خارجی",
+        "audioTitle": "داستان خارجی",
+        "slug": "کتاب-داستان-خارجی",
+        "audioSlug": "کتاب-داستان-صوتی-خارجی",
+        "hasAudioSection": true,
+        "firstAudioVisibleId": 68,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 8974,
+        "name": "ادبیات انگلستان",
+        "kind": 2,
+        "slug": "tag/ادبیات-انگلستان"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 0.6,
+      "currencyBeforeOffPrice": 1.0,
+      "sumDurationSeconds": 4272,
+      "rateCounts": 756,
+      "isEpub": false
+     },
+     {
+      "id": 26459,
+      "title": "کیمیاگر",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 26459,
+      "correspondingBooks": [
+       {
+        "title": "خرید نسخهٔ الکترونیکی",
+        "color": "#00a2a4",
+        "icon": "https://img.taaghche.com/logo/ic_category_ebook.png",
+        "destination": {
+         "type": 12,
+         "order": 0,
+         "navigationPage": 0,
+         "operationType": 0,
+         "bookId": 1014
+        }
+       }
+      ],
+      "correspondingBookId": 1014,
+      "lastUpdate": "2026-09-23T09:44:37.003",
+      "creationDate": "2017-11-25T17:10:53.773",
+      "persianShortDate": "آذر ۱۳۹۶",
+      "description": "کتاب صوتی کیمیاگر، مشهورترین داستان نویسنده‌ی معاصر برزیلی، پائولو کوئلیو است که درباره‌ی سفر چوپان جوانی به نام سانتیاگو برای یافتن گنجی در حوالی اهرام مصر است. این کتاب به بیش از ۷۰ زبان زنده دنیا ترجمه شده است و از پرفروش‌های قرن بیستم است.\nنصخه صوتی کتاب کیمیاگر را با ترجمه‌ی حسین نعیمی و با صدای احمد گنجی می‌شنوید.\nدرباره‌ی کتاب صوتی کیمیاگر\nکتاب صوتی کیمیاگر داستان چوپانی اسپانیایی به نام سانتیاگو است که در رؤیای خود، محل گنجی مدفون را در حوالی اهرام مصر مشاهده می‌کند. او به قصد تحقق بخشید...",
+      "PublisherID": 617,
+      "publisherSlug": "آوانامه",
+      "publisherShouldIndex": true,
+      "price": 189000.0,
+      "numberOfPages": 0,
+      "rating": 4.10690789473684,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 73
+       },
+       {
+        "value": 2.0,
+        "count": 44
+       },
+       {
+        "value": 3.0,
+        "count": 28
+       },
+       {
+        "value": 4.0,
+        "count": 63
+       },
+       {
+        "value": 5.0,
+        "count": 400
+       }
+      ],
+      "rateDetails": [
+       {
+        "id": 1,
+        "title": "متن روان",
+        "point": 2.301775147928994
+       },
+       {
+        "id": 2,
+        "title": "جذابیت",
+        "point": 2.455621301775148
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 189000.0,
+        "beforeOffPrice": 270000.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/off30.png",
+      "offSticker": "https://img.taaghche.com/sticker/off30.png",
+      "beforeOffPrice": 270000,
+      "offText": "۳۰٪ تخفیف",
+      "priceColor": "#ff0000",
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "related-book-goldoon-72107.1",
+      "coverUri": "https://img.taaghche.com/audioCover/26459.jpg",
+      "shareUri": "https://img.taaghche.com/share/26459.jpg",
+      "shareText": "«کیمیاگر» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/26459",
+      "publisher": "آوانامه",
+      "authors": [
+       {
+        "id": 457,
+        "firstName": "پائولو",
+        "lastName": "کوئیلو",
+        "type": 1,
+        "slug": "author/پائولو-کوئیلو",
+        "shouldIndex": true
+       },
+       {
+        "id": 458,
+        "firstName": "حسین",
+        "lastName": "نعیمی",
+        "type": 2,
+        "slug": "author/حسین-نعیمی",
+        "shouldIndex": true
+       },
+       {
+        "id": 5679,
+        "firstName": "احمد",
+        "lastName": "گنجی",
+        "type": 4,
+        "slug": "author/احمد-گنجی",
+        "shouldIndex": true
+       }
+      ],
+      "files": [
+       {
+        "id": 194296,
+        "size": 93806,
+        "type": 6,
+        "bookId": 26459,
+        "sequenceNo": 0
+       },
+       {
+        "id": 194297,
+        "size": 6475776,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 0,
+        "duration": 399,
+        "title": "پیشگفتار"
+       },
+       {
+        "id": 194298,
+        "size": 19556352,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 1,
+        "duration": 1217,
+        "title": "بخش اول"
+       },
+       {
+        "id": 194299,
+        "size": 16441344,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 2,
+        "duration": 1022,
+        "title": "بخش دوم"
+       },
+       {
+        "id": 194300,
+        "size": 23130112,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 3,
+        "duration": 1440,
+        "title": "بخش سوم"
+       },
+       {
+        "id": 194301,
+        "size": 20801536,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 4,
+        "duration": 1295,
+        "title": "بخش چهارم"
+       },
+       {
+        "id": 194302,
+        "size": 23898112,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 5,
+        "duration": 1488,
+        "title": "بخش پنجم"
+       },
+       {
+        "id": 194303,
+        "size": 6834176,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 6,
+        "duration": 422,
+        "title": "بخش ششم"
+       },
+       {
+        "id": 194304,
+        "size": 9783296,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 7,
+        "duration": 606,
+        "title": "بخش هفتم"
+       },
+       {
+        "id": 194305,
+        "size": 11644928,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 8,
+        "duration": 722,
+        "title": "بخش هشتم"
+       },
+       {
+        "id": 194306,
+        "size": 26996736,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 9,
+        "duration": 1682,
+        "title": "بخش نهم"
+       },
+       {
+        "id": 194307,
+        "size": 16003072,
+        "type": 8,
+        "bookId": 26459,
+        "sequenceNo": 10,
+        "duration": 995,
+        "title": "بخش دهم"
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 3357,
+        "tag": "مجموعه پرفروش‌های پاییز ۹۶",
+        "shouldIndex": false
+       }
+      ],
+      "categories": [
+       {
+        "id": 59,
+        "parent": 58,
+        "title": "رمان",
+        "audioTitle": "رمان",
+        "slug": "کتاب-رمان",
+        "audioSlug": "کتاب-رمان-صوتی",
+        "hasAudioSection": true,
+        "firstAudioVisibleId": 59,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       }
+      ],
+      "seriesAndTagCollections": [],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 4.35,
+      "currencyBeforeOffPrice": 6.21,
+      "sumDurationSeconds": 27669,
+      "rateCounts": 608,
+      "isEpub": false,
+      "descriptionLastUpdate": "2025-11-26T17:14:08.827"
+     }
+    ],
+    "layout": 6,
+    "showPrice": false
+   },
+   "backgroundConfig": {
+    "style": 0
+   },
+   "destination": {
+    "type": 0,
+    "order": 0,
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  }
+ ],
+ "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/72107",
+ "quotesCount": 0,
+ "hideOffCoupon": false,
+ "quotes": []
+}

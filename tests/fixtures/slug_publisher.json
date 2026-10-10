@@ -1,0 +1,850 @@
+{
+ "boxes": [
+  {
+   "type": 3,
+   "title": "",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "contentConfig": {
+    "type": 0,
+    "content": "<p>نشر کتاب کوله پشتی یکی از شناخته‌شده‌ترین ناشران ایرانی است که بیش از یک دهه در بازار نشر ایران فعال بوده است. این نشر از سال ۱۳۸۶ فعالیت خود را در ایران آغاز کرد و تاکنون چند صد عنوان از پرفروش‌ترین کتاب‌ها را در حوزه‌های مختلف ترجمه و به چاپ رسانده است. اباذر رضانیا معلم مدیریت این نشر را بر عهده دارد. نشر کوله‌پشتی علاوه بر حفظ حقوق نویسندگان از طریق خرید حق انتشار کتاب‌هایشان، برای اولین‌بار طرح گارانتی کتاب را ارائه کرد. طرح گارانتی کتاب به خریداران این امکان را می‌دهد که پس از خرید، اگر...",
+    "isHtml": false
+   }
+  },
+  {
+   "type": 1,
+   "title": "تازه‌ها",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "bookData": {
+    "books": [
+     {
+      "id": 337807,
+      "title": "امپراتوری هوش مصنوعی",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "subtitle": "رویاها و کابوس‌ها در اوپن ای آی سم آلتمن",
+      "lastUpdate": "2026-09-19T13:50:32.29",
+      "creationDate": "2026-09-09T12:39:08.413",
+      "persianShortDate": "شهریور ۱۴۰۵",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 299000.0,
+      "numberOfPages": 544,
+      "rates": [],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 299000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1405/06/18",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 0,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "119ca698-e164-4c0b-bd68-511a65abc9c8.2",
+      "coverUri": "https://img.taaghche.com/frontCover/337807.jpg",
+      "shareText": "«امپراتوری هوش مصنوعی» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/337807",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 148995,
+        "firstName": "کارن",
+        "lastName": "هائو",
+        "type": 1,
+        "slug": "author/کارن-هائو",
+        "shouldIndex": true
+       },
+       {
+        "id": 63152,
+        "firstName": "مرتضی",
+        "lastName": "بزرگیان",
+        "type": 2,
+        "slug": "author/مرتضی-بزرگیان",
+        "shouldIndex": true
+       },
+       {
+        "id": 117198,
+        "firstName": "سمیه",
+        "lastName": "سیاه پشت",
+        "type": 3,
+        "slug": "author/سمیه-سیاه-پشت",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 6.28,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 0,
+      "isEpub": true,
+      "englishTitle": "Empire of AI : dreams and nightmares in Sam Altman's OpenAI",
+      "descriptionLastUpdate": "2026-09-19T13:50:32.29"
+     },
+     {
+      "id": 337809,
+      "title": "مستاجر",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-09-19T14:59:50.193",
+      "creationDate": "2026-09-09T12:47:27.347",
+      "persianShortDate": "شهریور ۱۴۰۵",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 167000.0,
+      "numberOfPages": 336,
+      "rating": 4.0,
+      "rates": [
+       {
+        "value": 3.0,
+        "count": 1
+       },
+       {
+        "value": 5.0,
+        "count": 1
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 167000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1405/06/18",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "119ca698-e164-4c0b-bd68-511a65abc9c8.2",
+      "coverUri": "https://img.taaghche.com/frontCover/337809.jpg",
+      "shareText": "«مستاجر» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/337809",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 98575,
+        "firstName": "فریدا",
+        "lastName": "مک فادن",
+        "type": 1,
+        "slug": "author/فریدا-مک‌فادن",
+        "shouldIndex": true
+       },
+       {
+        "id": 17072,
+        "firstName": "مریم",
+        "lastName": "علیزاده میلانلو",
+        "type": 2,
+        "slug": "author/مریم-علیزاده-میلانلو",
+        "shouldIndex": true
+       },
+       {
+        "id": 132907,
+        "firstName": "نیلوفر رحیم پور انارکی",
+        "lastName": "",
+        "type": 3,
+        "slug": "author/نیلوفر-رحیم-پور-انارکی",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 8866,
+        "name": "فارسی",
+        "kind": 2,
+        "slug": "tag/فارسی"
+       },
+       {
+        "id": 8900,
+        "name": "جایزه منتخب گودریدز",
+        "kind": 2,
+        "slug": "tag/جایزه-منتخب-گودریدز"
+       },
+       {
+        "id": 8940,
+        "name": "منتخب سردبیران آمازون",
+        "kind": 2,
+        "slug": "tag/منتخب-سردبیران-آمازون"
+       },
+       {
+        "id": 8950,
+        "name": "ادبیات ایالات متحده آمریکا",
+        "kind": 2,
+        "slug": "tag/ادبیات-ایالات-متحده-آمریکا"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.78,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 2,
+      "isEpub": true,
+      "englishTitle": "The Tenant",
+      "descriptionLastUpdate": "2026-09-19T14:59:50.193"
+     },
+     {
+      "id": 337817,
+      "title": "دیاولا",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-09-15T12:57:22.56",
+      "creationDate": "2026-09-09T13:30:16.733",
+      "persianShortDate": "شهریور ۱۴۰۵",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 199000.0,
+      "numberOfPages": 384,
+      "rating": 3.33333333333333,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 1
+       },
+       {
+        "value": 2.0,
+        "count": 1
+       },
+       {
+        "value": 3.0,
+        "count": 1
+       },
+       {
+        "value": 4.0,
+        "count": 1
+       },
+       {
+        "value": 5.0,
+        "count": 2
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 199000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1404/01/01",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "119ca698-e164-4c0b-bd68-511a65abc9c8.2",
+      "coverUri": "https://img.taaghche.com/frontCover/337817.jpg",
+      "shareText": "«دیاولا» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/337817",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 152432,
+        "firstName": "جنیفر",
+        "lastName": "تورن",
+        "type": 1,
+        "slug": "author/جنیفر-تورن",
+        "shouldIndex": true
+       },
+       {
+        "id": 21842,
+        "firstName": "اطلسی",
+        "lastName": "خرامانی",
+        "type": 2,
+        "slug": "author/اطلسی-خرامانی",
+        "shouldIndex": true
+       },
+       {
+        "id": 85788,
+        "firstName": "مریم",
+        "lastName": "قیاسوند",
+        "type": 3,
+        "slug": "author/مریم-قیاسوند",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 8900,
+        "name": "جایزه منتخب گودریدز",
+        "kind": 2,
+        "slug": "tag/جایزه-منتخب-گودریدز"
+       },
+       {
+        "id": 8950,
+        "name": "ادبیات ایالات متحده آمریکا",
+        "kind": 2,
+        "slug": "tag/ادبیات-ایالات-متحده-آمریکا"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.95,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 6,
+      "isEpub": true,
+      "englishTitle": "Diavola: A Novel",
+      "descriptionLastUpdate": "2026-09-15T12:57:22.56"
+     }
+    ],
+    "layout": 1,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 5,
+    "filters": {
+     "list": [
+      {
+       "type": 3,
+       "value": 113
+      },
+      {
+       "type": 50,
+       "value": 0
+      }
+     ],
+     "refId": "119ca698-e164-4c0b-bd68-511a65abc9c8.2",
+     "shouldIndex": false
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  },
+  {
+   "type": 1,
+   "title": "داغ‌ترین‌ها",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "bookData": {
+    "books": [
+     {
+      "id": 95170,
+      "title": "کتابخانه نیمه شب",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-08-24T16:40:56.343",
+      "creationDate": "2021-04-06T12:30:27.763",
+      "persianShortDate": "فروردین ۱۴۰۰",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 117000.0,
+      "numberOfPages": 352,
+      "rating": 4.28888598667886,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 630
+       },
+       {
+        "value": 2.0,
+        "count": 368
+       },
+       {
+        "value": 3.0,
+        "count": 453
+       },
+       {
+        "value": 4.0,
+        "count": 915
+       },
+       {
+        "value": 5.0,
+        "count": 5291
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 117000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1399/01/23",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "61b7f969-a9fe-43b0-a848-dbede0c9e0ea.3",
+      "coverUri": "https://img.taaghche.com/frontCover/95170.jpg",
+      "shareText": "«کتابخانه نیمه شب» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/95170",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 21487,
+        "firstName": "مت",
+        "lastName": "هیگ",
+        "type": 1,
+        "slug": "author/مت-هیگ",
+        "shouldIndex": true
+       },
+       {
+        "id": 34727,
+        "firstName": "محمدصالح",
+        "lastName": "نورانی‌زاده",
+        "type": 2,
+        "slug": "author/محمدصالح-نورانی-زاده",
+        "shouldIndex": true
+       },
+       {
+        "id": 36861,
+        "firstName": "نگین",
+        "lastName": "موزرم‌نیا",
+        "type": 3,
+        "slug": "author/نگین-موزرم-نیا",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 8900,
+        "name": "جایزه منتخب گودریدز",
+        "kind": 2,
+        "slug": "tag/جایزه-منتخب-گودریدز"
+       },
+       {
+        "id": 8936,
+        "name": "منتخب روزنامه گاردین",
+        "kind": 2,
+        "slug": "tag/منتخب-روزنامه-گاردین"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.36,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 7657,
+      "isEpub": true,
+      "descriptionLastUpdate": "2026-08-24T16:40:56.343"
+     },
+     {
+      "id": 219044,
+      "title": "فرضیه عشق",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-08-29T16:36:51.05",
+      "creationDate": "2024-12-10T16:06:34.237",
+      "persianShortDate": "آذر ۱۴۰۳",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 151500.0,
+      "numberOfPages": 328,
+      "rating": 3.76422764227642,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 11
+       },
+       {
+        "value": 2.0,
+        "count": 11
+       },
+       {
+        "value": 3.0,
+        "count": 22
+       },
+       {
+        "value": 4.0,
+        "count": 31
+       },
+       {
+        "value": 5.0,
+        "count": 48
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 151500.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1403/09/21",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "61b7f969-a9fe-43b0-a848-dbede0c9e0ea.3",
+      "coverUri": "https://img.taaghche.com/frontCover/219044.jpg",
+      "shareText": "«فرضیه عشق» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/219044",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 114476,
+        "firstName": "الی",
+        "lastName": "هیزل وود",
+        "type": 1,
+        "slug": "author/الی-هیزل-وود",
+        "shouldIndex": true
+       },
+       {
+        "id": 17072,
+        "firstName": "مریم",
+        "lastName": "علیزاده میلانلو",
+        "type": 2,
+        "slug": "author/مریم-علیزاده-میلانلو",
+        "shouldIndex": true
+       },
+       {
+        "id": 114477,
+        "firstName": "لیلا",
+        "lastName": "ملکی",
+        "type": 3,
+        "slug": "author/لیلا-ملکی",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 8950,
+        "name": "ادبیات ایالات متحده آمریکا",
+        "kind": 2,
+        "slug": "tag/ادبیات-ایالات-متحده-آمریکا"
+       },
+       {
+        "id": 9098,
+        "name": "ادبیات آمریکای شمالی",
+        "kind": 2,
+        "slug": "tag/ادبیات-آمریکای-شمالی"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.67,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 123,
+      "isEpub": true,
+      "englishTitle": "The love hypothesis",
+      "descriptionLastUpdate": "2026-08-29T16:36:51.05"
+     },
+     {
+      "id": 198257,
+      "title": "خدمتکار",
+      "sourceBookId": 191042,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 191042,
+      "lastUpdate": "2026-05-05T12:22:11.813",
+      "creationDate": "2023-12-31T13:35:50.707",
+      "persianShortDate": "دی ۱۴۰۲",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 154500.0,
+      "numberOfPages": 0,
+      "rating": 3.93835616438356,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 35
+       },
+       {
+        "value": 2.0,
+        "count": 20
+       },
+       {
+        "value": 3.0,
+        "count": 31
+       },
+       {
+        "value": 4.0,
+        "count": 48
+       },
+       {
+        "value": 5.0,
+        "count": 158
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 154500.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "61b7f969-a9fe-43b0-a848-dbede0c9e0ea.3",
+      "coverUri": "https://img.taaghche.com/audioCover/198257.jpg",
+      "shareText": "«خدمتکار» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/198257",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 98575,
+        "firstName": "فریدا",
+        "lastName": "مک فادن",
+        "type": 1,
+        "slug": "author/فریدا-مک‌فادن",
+        "shouldIndex": true
+       },
+       {
+        "id": 17072,
+        "firstName": "مریم",
+        "lastName": "علیزاده میلانلو",
+        "type": 2,
+        "slug": "author/مریم-علیزاده-میلانلو",
+        "shouldIndex": true
+       },
+       {
+        "id": 10073,
+        "firstName": "مریم",
+        "lastName": "محبوب",
+        "type": 4,
+        "slug": "author/مریم-محبوب",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 16991,
+        "tag": "مجموعه خدمتکار",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 8944,
+        "name": "پرفروش‌های نیویورک تایمز",
+        "kind": 2,
+        "slug": "tag/پرفروش-های-نیویورک-تایمز"
+       },
+       {
+        "id": 14672,
+        "name": "خدمتکار کتاب کوله پشتی",
+        "kind": 1,
+        "slug": "series/خدمتکار-کتاب-کوله-پشتی"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": false,
+      "currencyPrice": 5.69,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 45856,
+      "rateCounts": 292,
+      "isEpub": false,
+      "descriptionLastUpdate": "2026-01-12T10:41:44.347"
+     }
+    ],
+    "layout": 1,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 1,
+    "filters": {
+     "list": [
+      {
+       "type": 3,
+       "value": 113
+      },
+      {
+       "type": 50,
+       "value": 0
+      }
+     ],
+     "refId": "61b7f969-a9fe-43b0-a848-dbede0c9e0ea.3",
+     "shouldIndex": false
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  }
+ ],
+ "headerBoxes": [
+  {
+   "type": 7,
+   "title": "همهٔ کتاب‌های کتاب کوله پشتی",
+   "destination": {
+    "type": 2,
+    "order": 0,
+    "filters": {
+     "list": [
+      {
+       "type": 50,
+       "value": 0
+      },
+      {
+       "type": 3,
+       "value": 113
+      }
+     ],
+     "slug": "publisher/کتاب-کوله-پشتی?page=1"
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   },
+   "icon": "icon-categories"
+  }
+ ],
+ "seoData": {
+  "title": "دانلود و خرید کتاب های انتشارات کتاب کوله پشتی | با تخفیف",
+  "description": "کتاب های نشر کتاب کوله پشتی را می‌توانید در نسخه‌های چاپی و الکترونیکی و صوتی از طاقچه با تخفیف خرید و دانلود کنید."
+ },
+ "title": "کتاب کوله پشتی",
+ "slug": "کتاب-کوله-پشتی",
+ "breadcrumb": {
+  "type": 3,
+  "value": 113,
+  "title": "کتاب کوله پشتی"
+ },
+ "breadcrumbV2": {
+  "breadcrumbs": [
+   {
+    "type": 0,
+    "value": 0,
+    "label": "طاقچه",
+    "title": "دانلود و خرید کتاب‌های طاقچه",
+    "slug": "",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 0,
+        "value": 0
+       }
+      ],
+      "slug": "",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 3,
+    "value": 0,
+    "label": "ناشر",
+    "title": "دانلود و خرید کتاب‌های ناشر",
+    "slug": "publisher",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 3,
+        "value": 0
+       }
+      ],
+      "slug": "publisher",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 3,
+    "value": 113,
+    "label": "کتاب کوله پشتی",
+    "title": "دانلود و خرید کتاب‌های کتاب کوله پشتی",
+    "slug": "publisher/کتاب-کوله-پشتی",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 3,
+        "value": 113
+       }
+      ],
+      "slug": "publisher/کتاب-کوله-پشتی",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   }
+  ]
+ },
+ "tpv": "General-Publisher-113",
+ "hasMore": false,
+ "nextOffset": "5-0-0-0",
+ "isPlayable": false,
+ "bookCardView": 0,
+ "noIndex": false
+}

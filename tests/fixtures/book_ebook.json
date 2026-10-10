@@ -1,0 +1,698 @@
+{
+ "book": {
+  "id": 6426,
+  "title": "شازده کوچولو",
+  "sourceBookId": 0,
+  "index": true,
+  "hasPhysicalEdition": false,
+  "canonicalId": 12405,
+  "correspondingBookId": 0,
+  "lastUpdate": "2026-05-05T12:22:08.353",
+  "creationDate": "2015-12-26T16:40:40.033",
+  "persianShortDate": "دی ۱۳۹۴",
+  "description": "شازده کوچولو، شاهکار آنتوان دو سنت ‌اگزوپری نویسنده فرانسوی است که در سال ۱۹۴۳ منتشر شد و توجه جهانیان را به خود جلب کرد.\n\n\nخلاصه کتاب شازده کوچولو\nکتاب شازده کوچولو نوشته آنتوان دو سنت ‌اگزوپری، در مقام سومین کتاب پرخواننده جهان در قرن اخیر قرار دارد. اگزوپری در این کتاب، داستان خلبانی را روایت می‌کند که ناچار به فرود اجباری در صحرای آفریقامی‌شود. خلبان در این بیابان با پسربچه‌ای متفاوت آشنا می‌شود و به سوالات عجیب او پاسخ می‌دهد. شازده کوچولو جزو کتاب‌های کم‌نظیر برای کودکان و شاهکاری جاویدان ...",
+  "PublisherID": 113,
+  "publisherSlug": "publisher/کتاب-کوله-پشتی",
+  "publisherShouldIndex": true,
+  "price": 58500.0,
+  "numberOfPages": 192,
+  "rating": 4.40507859733978,
+  "rates": [
+   {
+    "value": 1.0,
+    "count": 61
+   },
+   {
+    "value": 2.0,
+    "count": 40
+   },
+   {
+    "value": 3.0,
+    "count": 34
+   },
+   {
+    "value": 4.0,
+    "count": 60
+   },
+   {
+    "value": 5.0,
+    "count": 632
+   }
+  ],
+  "rateDetails": [
+   {
+    "id": 1,
+    "title": "متن روان",
+    "point": 1.8739495798319328
+   },
+   {
+    "id": 2,
+    "title": "جذابیت",
+    "point": 2.0168067226890756
+   }
+  ],
+  "types": [
+   {
+    "id": 1,
+    "name": "الکترونیکی",
+    "price": 58500.0,
+    "beforeOffPrice": 0.0
+   }
+  ],
+  "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+  "beforeOffPrice": 0,
+  "isRtl": true,
+  "showOverlay": true,
+  "PhysicalPrice": 132000,
+  "physicalBeforeOffPrice": 165000,
+  "ISBN": "9786006687780",
+  "publishDate": "1392/10/01",
+  "destination": 0,
+  "type": "Text",
+  "productClass": 1,
+  "prefix": "کتاب",
+  "noFollow": false,
+  "pdpSlug": "book",
+  "refId": "",
+  "coverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+  "shareUri": "https://img.taaghche.com/share/6426.jpg",
+  "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/6426",
+  "publisher": "کتاب کوله پشتی",
+  "authors": [
+   {
+    "id": 2072,
+    "firstName": "آنتوان",
+    "lastName": "دوسنت اگزوپری",
+    "type": 1,
+    "slug": "author/آنتوان-دوسنت-اگزوپری",
+    "shouldIndex": true
+   },
+   {
+    "id": 2073,
+    "firstName": "مریم",
+    "lastName": "صبوری",
+    "type": 2,
+    "slug": "author/مریم-صبوری",
+    "shouldIndex": true
+   }
+  ],
+  "files": [
+   {
+    "id": 100836,
+    "size": 915181,
+    "type": 0,
+    "bookId": 6426,
+    "sequenceNo": 0
+   },
+   {
+    "id": 100837,
+    "size": 683378,
+    "type": 3,
+    "bookId": 6426,
+    "sequenceNo": 0
+   },
+   {
+    "id": 100838,
+    "size": 74607,
+    "type": 4,
+    "bookId": 6426,
+    "sequenceNo": 0
+   },
+   {
+    "id": 1034722,
+    "size": 396721,
+    "type": 6,
+    "bookId": 6426,
+    "sequenceNo": 0
+   }
+  ],
+  "labels": [
+   {
+    "tagID": 287,
+    "tag": "داستان فرانسوی",
+    "shouldIndex": false
+   },
+   {
+    "tagID": 3142,
+    "tag": "پرفروش‌ترین‌های ۹۴",
+    "shouldIndex": false
+   },
+   {
+    "tagID": 4248,
+    "tag": "مجموعه اقتباس سینمایی",
+    "slug": "label/سینمای-اقتباسی-از-ادبیات",
+    "shouldIndex": false
+   },
+   {
+    "tagID": 4307,
+    "tag": "کمپین دنیای قشنگ تو - ۹۸",
+    "shouldIndex": false
+   },
+   {
+    "tagID": 5109,
+    "tag": "کمپین دنیای قشنگ تو - ۹۹",
+    "shouldIndex": false
+   }
+  ],
+  "categories": [
+   {
+    "id": 68,
+    "parent": 58,
+    "title": "داستان خارجی",
+    "audioTitle": "داستان خارجی",
+    "slug": "category/کتاب-داستان-خارجی",
+    "audioSlug": "category/کتاب-داستان-صوتی-خارجی",
+    "hasAudioSection": true,
+    "firstAudioVisibleId": 68,
+    "shouldIndex": true,
+    "audioShouldIndex": true
+   },
+   {
+    "id": 81,
+    "parent": 51,
+    "title": "داستان کودک و نوجوانان",
+    "audioTitle": "داستان کودک و نوجوانان",
+    "slug": "category/کتاب-داستان-کودک-و-نوجوانان",
+    "audioSlug": "category/داستان-رمان-کودک-نوجوان-صوتی",
+    "hasAudioSection": true,
+    "firstAudioVisibleId": 81,
+    "shouldIndex": true,
+    "audioShouldIndex": true
+   }
+  ],
+  "seriesAndTagCollections": [
+   {
+    "id": 9035,
+    "name": "ادبیات فرانسه",
+    "kind": 2,
+    "slug": "tag/ادبیات-فرانسه"
+   },
+   {
+    "id": 14695,
+    "name": "۱۰۰ کتاب قرن لوموند",
+    "kind": 2,
+    "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+   }
+  ],
+  "subscriptionAvailable": true,
+  "state": 1,
+  "encrypted": true,
+  "currencyPrice": 4.32,
+  "currencyBeforeOffPrice": 0.0,
+  "sumDurationSeconds": 0,
+  "rateCounts": 827,
+  "isEpub": true
+ },
+ "comments": [
+  {
+   "id": 398431,
+   "accountId": 588130,
+   "verifiedAccount": false,
+   "nickname": "_SOMEONE_",
+   "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+   "bookId": 6426,
+   "bookCoverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+   "bookType": "Text",
+   "bookName": "شازده کوچولو",
+   "creationDate": "1398/02/19",
+   "rate": 5.0,
+   "latestReplies": [
+    {
+     "id": 0,
+     "accountId": 6788635,
+     "verifiedAccount": false,
+     "nickname": "طلوع",
+     "profileImageUri": "https://img.taaghche.com/avatar/avatar-01.jpg",
+     "bookId": 6426,
+     "bookCoverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+     "bookType": "Text",
+     "bookName": "شازده کوچولو",
+     "creationDate": "1405/04/18",
+     "rate": 0.0,
+     "latestReplies": [],
+     "repliesCount": 0,
+     "likeCount": 0,
+     "dislikeCount": 0,
+     "comment": "انیمیشنش اصلا به خود شازده کوچولو هیچ ربط نداره",
+     "isLiked": false,
+     "isDisliked": false,
+     "rateDetails": [],
+     "recommendation": 0
+    }
+   ],
+   "repliesCount": 20,
+   "likeCount": 207,
+   "dislikeCount": 16,
+   "comment": "شازده :آدما که تنهان کجا میرن؟\nروباه:تو خودشون...\nبی شک بهترین کتابیه که در تموم عمرم خوندم.\nناتوانم در توصیفش!\nقابل توجه دوستداران شازده\nجلد دوم این کتاب هم نوشته شده به اسم برگشت شازده پسر\nاگه دوست داشتید اون رو هم بخونید.",
+   "isLiked": false,
+   "isDisliked": false,
+   "rateDetails": [],
+   "recommendation": 0
+  },
+  {
+   "id": 268570,
+   "accountId": 390956,
+   "verifiedAccount": false,
+   "nickname": "armin",
+   "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+   "bookId": 6426,
+   "bookCoverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+   "bookType": "Text",
+   "bookName": "شازده کوچولو",
+   "creationDate": "1397/01/06",
+   "rate": 2.0,
+   "latestReplies": [
+    {
+     "id": 0,
+     "accountId": 128374,
+     "verifiedAccount": false,
+     "nickname": "....",
+     "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+     "bookId": 6426,
+     "bookCoverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+     "bookType": "Text",
+     "bookName": "شازده کوچولو",
+     "creationDate": "1405/06/25",
+     "rate": 0.0,
+     "latestReplies": [],
+     "repliesCount": 0,
+     "likeCount": 0,
+     "dislikeCount": 0,
+     "comment": "چرا ۳ ستاره کم دادی",
+     "isLiked": false,
+     "isDisliked": false,
+     "rateDetails": [],
+     "recommendation": 0
+    }
+   ],
+   "repliesCount": 1,
+   "likeCount": 120,
+   "dislikeCount": 5,
+   "comment": "شازده کوچولو:گل من گاهی بی وفا کم حوصله و مغرور بود اما ماندنی بود این ماندش بود که او را تبدیل به گل من کرده بود",
+   "isLiked": false,
+   "isDisliked": false,
+   "rateDetails": [],
+   "recommendation": 0
+  }
+ ],
+ "commentsCount": 388,
+ "relatedBooks": [
+  {
+   "type": 1,
+   "title": "آثار مشابه",
+   "backgroundStyle": 0,
+   "bookData": {
+    "books": [
+     {
+      "id": 135206,
+      "title": "نازنین",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2025-12-23T14:49:39.297",
+      "creationDate": "2022-11-21T14:56:56.457",
+      "persianShortDate": "آبان ۱۴۰۱",
+      "description": "کتاب نازنین نوشتهٔ فیودور داستایفسکی و ترجمهٔ یلدا بیدختی نژاد است. نشر چشمه این داستان بلند را روانهٔ بازار کرده است. این اثر یکی از کتاب‌های «مجموعهٔ برج بابل» است.\n\nدرباره کتاب نازنین\nکتاب نازنین حاوی یکی از داستان‌های فیودور داستایفسکی است. این داستان در کنار «شب‌های روشن» از مشهورترین داستان‌های بلند داستایوسکی است. داستایوسکی «نازنین» را در ۴۵سالگی نوشت؛ زمانی که دیگر نویسنده‌ای چیره‌دست بود. او این داستان را با یک مقدمه شروع می‌کند؛ چیزی که تا پیش از این روال معمول کارش نبوده و ۲ دلیل هم ...",
+      "PublisherID": 60,
+      "publisherSlug": "نشر-چشمه",
+      "publisherShouldIndex": true,
+      "price": 84000.0,
+      "numberOfPages": 95,
+      "rating": 4.20122324159021,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 137
+       },
+       {
+        "value": 2.0,
+        "count": 65
+       },
+       {
+        "value": 3.0,
+        "count": 131
+       },
+       {
+        "value": 4.0,
+        "count": 301
+       },
+       {
+        "value": 5.0,
+        "count": 1001
+       }
+      ],
+      "rateDetails": [
+       {
+        "id": 1,
+        "title": "متن روان",
+        "point": 0.27882599580712786
+       },
+       {
+        "id": 2,
+        "title": "جذابیت",
+        "point": 0.2557651991614256
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 84000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "ISBN": "9786220110149",
+      "publishDate": "1401/01/08",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "related-book-goldoon-6426.1",
+      "coverUri": "https://img.taaghche.com/frontCover/135206.jpg",
+      "shareUri": "https://img.taaghche.com/share/135206.jpg",
+      "shareText": "«نازنین» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/135206",
+      "publisher": "نشر چشمه",
+      "authors": [
+       {
+        "id": 49022,
+        "firstName": "فیودور",
+        "lastName": "داستایفسکی",
+        "type": 1,
+        "slug": "author/فئودور-داستایفسکی",
+        "shouldIndex": true
+       },
+       {
+        "id": 56915,
+        "firstName": "یلدا",
+        "lastName": "بیدختی‌نژاد",
+        "type": 2,
+        "slug": "author/یلدا-بیدختی-نژاد",
+        "shouldIndex": true
+       }
+      ],
+      "files": [
+       {
+        "id": 828624,
+        "size": 3743744,
+        "type": 0,
+        "bookId": 135206,
+        "sequenceNo": 0
+       },
+       {
+        "id": 828625,
+        "size": 1361728,
+        "type": 1,
+        "bookId": 135206,
+        "sequenceNo": 0
+       },
+       {
+        "id": 830419,
+        "size": 108232,
+        "type": 3,
+        "bookId": 135206,
+        "sequenceNo": 0
+       },
+       {
+        "id": 830420,
+        "size": 58169,
+        "type": 4,
+        "bookId": 135206,
+        "sequenceNo": 0
+       },
+       {
+        "id": 1109719,
+        "size": 63634,
+        "type": 6,
+        "bookId": 135206,
+        "sequenceNo": 0
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 7650,
+        "tag": "مجموعه برج بابل",
+        "shouldIndex": false
+       }
+      ],
+      "categories": [
+       {
+        "id": 68,
+        "parent": 58,
+        "title": "داستان خارجی",
+        "slug": "کتاب-داستان-خارجی",
+        "audioSlug": "کتاب-داستان-صوتی-خارجی",
+        "hasAudioSection": false,
+        "firstAudioVisibleId": 0,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       }
+      ],
+      "seriesAndTagCollections": [],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 4.9,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 1635,
+      "isEpub": true,
+      "descriptionLastUpdate": "2025-12-23T14:49:39.297"
+     },
+     {
+      "id": 59529,
+      "title": "پنج قدم فاصله",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-08-29T18:39:20.087",
+      "creationDate": "2019-07-28T13:15:32.227",
+      "persianShortDate": "مرداد ۱۳۹۸",
+      "description": "کتاب پنج قدم فاصله -که در ایران با نام ۵ فوت فاصله هم شناخته می‌شود- یک رمان عاشقانه برای نوجوانان نوشته‌ی ریچل لیپینکات براساس فیلمنامه‌ای از میکی داتری و توبیاس ایاکونیس است. این کتاب در سال ۲۰۱۸ منتشر شد و در بین خوانندگان بزرگسال و نوجوان به محبوبیت و توجه زیادی دست یافت. داستان حول محور دو نوجوان به نام‌های استلا گرانت و ویل نیومن می‌چرخد که هردو مبتلا به یک اختلال ژنتیکی به نام فیبروز کیستیک (CF) هستند که ریه‌ها و سایر اندام‌ها را تحت تاثیر قرار می‌دهد.\nانتشارات میلکان این رمان عاشقانه را ...",
+      "PublisherID": 164,
+      "publisherSlug": "انتشارات-میلکان",
+      "publisherShouldIndex": true,
+      "price": 135000.0,
+      "numberOfPages": 217,
+      "rating": 4.37409420289855,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 157
+       },
+       {
+        "value": 2.0,
+        "count": 96
+       },
+       {
+        "value": 3.0,
+        "count": 125
+       },
+       {
+        "value": 4.0,
+        "count": 216
+       },
+       {
+        "value": 5.0,
+        "count": 1614
+       }
+      ],
+      "rateDetails": [
+       {
+        "id": 1,
+        "title": "متن روان",
+        "point": 2.43186372745491
+       },
+       {
+        "id": 2,
+        "title": "جذابیت",
+        "point": 2.5601202404809618
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 135000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "ISBN": "9786008812517",
+      "publishDate": "1397/05/11",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "related-book-goldoon-6426.1",
+      "coverUri": "https://img.taaghche.com/frontCover/59529.jpg",
+      "shareUri": "https://img.taaghche.com/share/59529.jpg",
+      "shareText": "«پنج قدم فاصله» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/59529",
+      "publisher": "انتشارات میلکان",
+      "authors": [
+       {
+        "id": 18790,
+        "firstName": "ریچل",
+        "lastName": "لیپینکات",
+        "type": 1,
+        "slug": "author/ریچل-لیپینکات",
+        "shouldIndex": true
+       },
+       {
+        "id": 18791,
+        "firstName": "فاطمه",
+        "lastName": "صبحی",
+        "type": 2,
+        "slug": "author/فاطمه-صبحی",
+        "shouldIndex": true
+       }
+      ],
+      "files": [
+       {
+        "id": 324479,
+        "size": 2226002,
+        "type": 1,
+        "bookId": 59529,
+        "sequenceNo": 0
+       },
+       {
+        "id": 327621,
+        "size": 315184,
+        "type": 0,
+        "bookId": 59529,
+        "sequenceNo": 0
+       },
+       {
+        "id": 327622,
+        "size": 213134,
+        "type": 3,
+        "bookId": 59529,
+        "sequenceNo": 0
+       },
+       {
+        "id": 327623,
+        "size": 20701,
+        "type": 4,
+        "bookId": 59529,
+        "sequenceNo": 0
+       },
+       {
+        "id": 1155412,
+        "size": 1363675,
+        "type": 6,
+        "bookId": 59529,
+        "sequenceNo": 0
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 4248,
+        "tag": "مجموعه اقتباس سینمایی",
+        "slug": "سینمای-اقتباسی-از-ادبیات",
+        "shouldIndex": false
+       }
+      ],
+      "categories": [
+       {
+        "id": 59,
+        "parent": 58,
+        "title": "رمان",
+        "audioTitle": "رمان",
+        "slug": "کتاب-رمان",
+        "audioSlug": "کتاب-رمان-صوتی",
+        "hasAudioSection": true,
+        "firstAudioVisibleId": 59,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       },
+       {
+        "id": 68,
+        "parent": 58,
+        "title": "داستان خارجی",
+        "audioTitle": "داستان خارجی",
+        "slug": "کتاب-داستان-خارجی",
+        "audioSlug": "کتاب-داستان-صوتی-خارجی",
+        "hasAudioSection": true,
+        "firstAudioVisibleId": 68,
+        "shouldIndex": true,
+        "audioShouldIndex": true
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 8900,
+        "name": "جایزه منتخب گودریدز",
+        "kind": 2,
+        "slug": "tag/جایزه-منتخب-گودریدز"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.54,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 2208,
+      "isEpub": true,
+      "descriptionLastUpdate": "2026-08-29T18:39:20.087"
+     }
+    ],
+    "layout": 6,
+    "showPrice": false
+   },
+   "backgroundConfig": {
+    "style": 0
+   },
+   "destination": {
+    "type": 0,
+    "order": 0,
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  }
+ ],
+ "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/6426",
+ "quotes": [
+  {
+   "id": "55001",
+   "data": {
+    "quote": "محاکمه خودت ازمحاکمه هر بنی بشری مشکل‌تر است. اگر موفق شوی به درستی درباره‌ی خودت قضاوت کنی، آنگاه یک عالم  به تمام معنا می‌شوی.»",
+    "startAtomId": 10529,
+    "endAtomId": 10529,
+    "chapterIndex": 16,
+    "endOffset": 205,
+    "startOffset": 76
+   },
+   "likeCount": 442,
+   "bookId": 6426,
+   "accountId": 536786,
+   "commentCount": 9,
+   "creationDate": "1397/09/11",
+   "date": "2018-12-02T00:51:42",
+   "showComment": true,
+   "coverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+   "bookName": "شازده کوچولو",
+   "authorName": "آنتوان دوسنت اگزوپری",
+   "publisherName": "کتاب کوله پشتی",
+   "profileImageUri": "https://img.taaghche.com/profile/0.jpg",
+   "nickname": "نسیم"
+  }
+ ],
+ "quotesCount": 688,
+ "hideOffCoupon": false
+}

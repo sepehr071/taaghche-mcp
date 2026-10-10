@@ -1,0 +1,937 @@
+{
+ "boxes": [
+  {
+   "type": 3,
+   "title": "درباره زندگی و کتاب های آنتوان دوسنت اگزوپری",
+   "logo": {
+    "imageUrl": "https://img.taaghche.com/banner/6363148153924493669.jpg",
+    "type": 1
+   },
+   "backgroundStyle": 1,
+   "contentConfig": {
+    "type": 2,
+    "content": "<p><b>آنتوان دوسنت اگزوپری</b>، یکی از مشهورترین نویسندگان تاریخ جهان است که با نوشتن کتاب <b>شازده کوچولو</b>، محبوبیتی جاودانی برای خود خرید. این نویسنده، هرگز اصراری برای اینکه یک اثر ادبی بیافریند نداشت، بلکه همیشه در تلاش بود تا روایت شخصی خود را بیان کند و مسائل را از دیدگاه خاص خودش ببیند و احتمالا این موضوع، رمزی از موفقیت او است. چراکه او به واسطه پرواز کردن، این حس ناب و متفاوت را تجربه کرده بود و حضورش در سرزمین‌های دیگر، افق‌های دیدش را باز و گسترده کرده بود. </p><h2>بیوگرافی آنتوان ...",
+    "isHtml": false
+   }
+  },
+  {
+   "type": 1,
+   "title": "کتاب‌های صوتی آنتوان دوسنت اگزوپری",
+   "subtitle": "",
+   "backgroundStyle": 0,
+   "bookData": {
+    "books": [
+     {
+      "id": 72107,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 72107,
+      "correspondingBookId": 0,
+      "subtitle": "در دو اجرا: ۱- خوانش کامل کتاب ۲-اقتباس نمایشی، با موسیقی و آواز",
+      "lastUpdate": "2026-08-26T15:06:50.66",
+      "creationDate": "2020-04-15T16:26:17.343",
+      "persianShortDate": "فروردین ۱۳۹۹",
+      "PublisherID": 156,
+      "publisherSlug": "انتشارات-نگاه",
+      "publisherShouldIndex": true,
+      "price": 15000.0,
+      "numberOfPages": 0,
+      "rating": 4.368980405181,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 548
+       },
+       {
+        "value": 2.0,
+        "count": 241
+       },
+       {
+        "value": 3.0,
+        "count": 246
+       },
+       {
+        "value": 4.0,
+        "count": 393
+       },
+       {
+        "value": 5.0,
+        "count": 4594
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 15000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "56f94e5c-87fe-4f2e-b60e-8c0053d6d0ec.2",
+      "coverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/72107",
+      "publisher": "انتشارات نگاه",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 752,
+        "firstName": "احمد",
+        "lastName": "شاملو",
+        "type": 2,
+        "slug": "author/احمد-شاملو",
+        "shouldIndex": true
+       },
+       {
+        "id": 6810,
+        "firstName": "جمعی از",
+        "lastName": "گویندگان",
+        "type": 4,
+        "slug": "author/جمعی-از-گویندگان",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 5109,
+        "tag": "کمپین دنیای قشنگ تو - ۹۹",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 2.03,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 10621,
+      "rateCounts": 6022,
+      "isEpub": false,
+      "descriptionLastUpdate": "2026-08-26T14:52:19.05"
+     },
+     {
+      "id": 65661,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 72107,
+      "correspondingBookId": 0,
+      "subtitle": "با صدای سه بعدی",
+      "lastUpdate": "2026-09-23T09:44:37.04",
+      "creationDate": "2019-12-14T14:39:51.657",
+      "persianShortDate": "آذر ۱۳۹۸",
+      "PublisherID": 617,
+      "publisherSlug": "آوانامه",
+      "publisherShouldIndex": true,
+      "price": 270000.0,
+      "numberOfPages": 0,
+      "rating": 4.43497267759563,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 65
+       },
+       {
+        "value": 2.0,
+        "count": 35
+       },
+       {
+        "value": 3.0,
+        "count": 45
+       },
+       {
+        "value": 4.0,
+        "count": 62
+       },
+       {
+        "value": 5.0,
+        "count": 708
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 270000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "56f94e5c-87fe-4f2e-b60e-8c0053d6d0ec.2",
+      "coverUri": "https://img.taaghche.com/audioCover/65661.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/65661",
+      "publisher": "آوانامه",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 21062,
+        "firstName": "م",
+        "lastName": "کاشیگر",
+        "type": 2,
+        "slug": "author/مدیا-کاشیگر",
+        "shouldIndex": true
+       },
+       {
+        "id": 5759,
+        "firstName": "بهنوش",
+        "lastName": "فرهودی",
+        "type": 4,
+        "slug": "author/بهنوش-فرهودی",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 6.21,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 7826,
+      "rateCounts": 915,
+      "isEpub": false
+     },
+     {
+      "id": 241418,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2025-10-29T10:42:51.707",
+      "creationDate": "2025-10-22T12:08:06.56",
+      "persianShortDate": "مهر ۱۴۰۴",
+      "PublisherID": 6559,
+      "publisherSlug": "انتشارات-اکویپا",
+      "publisherShouldIndex": true,
+      "price": 110000.0,
+      "numberOfPages": 0,
+      "rating": 4.66292134831461,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 1
+       },
+       {
+        "value": 2.0,
+        "count": 3
+       },
+       {
+        "value": 3.0,
+        "count": 4
+       },
+       {
+        "value": 4.0,
+        "count": 9
+       },
+       {
+        "value": 5.0,
+        "count": 72
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 110000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "56f94e5c-87fe-4f2e-b60e-8c0053d6d0ec.2",
+      "coverUri": "https://img.taaghche.com/audioCover/241418.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/241418",
+      "publisher": "انتشارات اکوپیا",
+      "authors": [
+       {
+        "id": 56916,
+        "firstName": "آنتوان دو",
+        "lastName": "سنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 13975,
+        "firstName": "احسان",
+        "lastName": "چریکی",
+        "type": 2,
+        "slug": "author/احسان-چریکی",
+        "shouldIndex": true
+       },
+       {
+        "id": 13975,
+        "firstName": "احسان",
+        "lastName": "چریکی",
+        "type": 4,
+        "slug": "author/احسان-چریکی",
+        "shouldIndex": true
+       },
+       {
+        "id": 22571,
+        "firstName": "مرضیه",
+        "lastName": "رحماندوست",
+        "type": 4,
+        "slug": "author/مرضیه-رحماندوست",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.28,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 11508,
+      "rateCounts": 89,
+      "isEpub": false,
+      "descriptionLastUpdate": "2025-10-29T10:42:51.707"
+     }
+    ],
+    "layout": 6,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 3,
+    "filters": {
+     "list": [
+      {
+       "type": 2,
+       "value": 2072
+      },
+      {
+       "type": 21,
+       "value": 1
+      },
+      {
+       "type": 50,
+       "value": 1
+      }
+     ],
+     "refId": "56f94e5c-87fe-4f2e-b60e-8c0053d6d0ec.2",
+     "shouldIndex": false
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  },
+  {
+   "type": 1,
+   "title": "کتاب‌های الکترونیکی آنتوان دوسنت اگزوپری",
+   "subtitle": "",
+   "backgroundStyle": 0,
+   "bookData": {
+    "books": [
+     {
+      "id": 6426,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 12405,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-05-05T12:22:08.353",
+      "creationDate": "2015-12-26T16:40:40.033",
+      "persianShortDate": "دی ۱۳۹۴",
+      "PublisherID": 113,
+      "publisherSlug": "کتاب-کوله-پشتی",
+      "publisherShouldIndex": true,
+      "price": 58500.0,
+      "numberOfPages": 192,
+      "rating": 4.40507859733978,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 61
+       },
+       {
+        "value": 2.0,
+        "count": 40
+       },
+       {
+        "value": 3.0,
+        "count": 34
+       },
+       {
+        "value": 4.0,
+        "count": 60
+       },
+       {
+        "value": 5.0,
+        "count": 632
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 58500.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "PhysicalPrice": 132000,
+      "physicalBeforeOffPrice": 165000,
+      "publishDate": "1392/10/01",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "cc6400de-ce42-4817-ba30-f203a7e551eb.3",
+      "coverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/6426",
+      "publisher": "کتاب کوله پشتی",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 2073,
+        "firstName": "مریم",
+        "lastName": "صبوری",
+        "type": 2,
+        "slug": "author/مریم-صبوری",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 287,
+        "tag": "داستان فرانسوی",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 3142,
+        "tag": "پرفروش‌ترین‌های ۹۴",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4248,
+        "tag": "مجموعه اقتباس سینمایی",
+        "slug": "سینمای-اقتباسی-از-ادبیات",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4307,
+        "tag": "کمپین دنیای قشنگ تو - ۹۸",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 5109,
+        "tag": "کمپین دنیای قشنگ تو - ۹۹",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 4.32,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 827,
+      "isEpub": true
+     },
+     {
+      "id": 25986,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 12405,
+      "correspondingBookId": 0,
+      "lastUpdate": "2025-01-06T13:05:48.47",
+      "creationDate": "2017-11-08T17:07:48.677",
+      "persianShortDate": "آبان ۱۳۹۶",
+      "PublisherID": 211,
+      "publisherSlug": "انتشارات-پر",
+      "publisherShouldIndex": true,
+      "price": 20000.0,
+      "numberOfPages": 152,
+      "rating": 4.27609427609428,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 30
+       },
+       {
+        "value": 2.0,
+        "count": 24
+       },
+       {
+        "value": 3.0,
+        "count": 7
+       },
+       {
+        "value": 4.0,
+        "count": 9
+       },
+       {
+        "value": 5.0,
+        "count": 227
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 20000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1396/01/01",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "cc6400de-ce42-4817-ba30-f203a7e551eb.3",
+      "coverUri": "https://img.taaghche.com/frontCover/25986.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/25986",
+      "publisher": "انتشارات پر",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 8664,
+        "firstName": "میثم",
+        "lastName": "رحیمی",
+        "type": 2,
+        "slug": "author/میثم-رحیمی",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 4248,
+        "tag": "مجموعه اقتباس سینمایی",
+        "slug": "سینمای-اقتباسی-از-ادبیات",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4307,
+        "tag": "کمپین دنیای قشنگ تو - ۹۸",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 5109,
+        "tag": "کمپین دنیای قشنگ تو - ۹۹",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 2.47,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 297,
+      "isEpub": false,
+      "englishTitle": "Le petit prince"
+     },
+     {
+      "id": 10475,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 12405,
+      "correspondingBookId": 0,
+      "lastUpdate": "2020-12-06T12:23:52.187",
+      "creationDate": "2016-06-23T11:33:54.48",
+      "persianShortDate": "تیر ۱۳۹۵",
+      "PublisherID": 341,
+      "publisherSlug": "انتشارات-چلچله",
+      "publisherShouldIndex": true,
+      "price": 5000.0,
+      "numberOfPages": 112,
+      "rating": 4.35164835164835,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 16
+       },
+       {
+        "value": 2.0,
+        "count": 8
+       },
+       {
+        "value": 3.0,
+        "count": 7
+       },
+       {
+        "value": 4.0,
+        "count": 16
+       },
+       {
+        "value": 5.0,
+        "count": 135
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 5000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1392/04/01",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "cc6400de-ce42-4817-ba30-f203a7e551eb.3",
+      "coverUri": "https://img.taaghche.com/frontCover/10475.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/10475",
+      "publisher": "انتشارات چلچله",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 3178,
+        "firstName": "فرزام ",
+        "lastName": "حبیبی",
+        "type": 2,
+        "slug": "author/فرزام-حبیبی",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 287,
+        "tag": "داستان فرانسوی",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4248,
+        "tag": "مجموعه اقتباس سینمایی",
+        "slug": "سینمای-اقتباسی-از-ادبیات",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4307,
+        "tag": "کمپین دنیای قشنگ تو - ۹۸",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 0.99,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 182,
+      "isEpub": true
+     }
+    ],
+    "layout": 6,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 3,
+    "filters": {
+     "list": [
+      {
+       "type": 2,
+       "value": 2072
+      },
+      {
+       "type": 21,
+       "value": 0
+      },
+      {
+       "type": 50,
+       "value": 0
+      }
+     ],
+     "refId": "cc6400de-ce42-4817-ba30-f203a7e551eb.3",
+     "shouldIndex": false
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  }
+ ],
+ "headerBoxes": [
+  {
+   "type": 7,
+   "title": "همهٔ کتاب‌های آنتوان دوسنت اگزوپری",
+   "destination": {
+    "type": 2,
+    "order": 0,
+    "filters": {
+     "list": [
+      {
+       "type": 50,
+       "value": 0
+      },
+      {
+       "type": 2,
+       "value": 2072
+      }
+     ],
+     "slug": "author/آنتوان-دوسنت-اگزوپری?page=1"
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   },
+   "icon": "icon-categories"
+  }
+ ],
+ "seoData": {
+  "title": "",
+  "description": ""
+ },
+ "title": "آنتوان دوسنت اگزوپری",
+ "slug": "آنتوان-دوسنت-اگزوپری",
+ "breadcrumb": {
+  "type": 2,
+  "value": 2072,
+  "title": "آنتوان دوسنت اگزوپری"
+ },
+ "breadcrumbV2": {
+  "breadcrumbs": [
+   {
+    "type": 0,
+    "value": 0,
+    "label": "طاقچه",
+    "title": "دانلود و خرید کتاب‌های طاقچه",
+    "slug": "",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 0,
+        "value": 0
+       }
+      ],
+      "slug": "",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 2,
+    "value": 0,
+    "label": "پدیدآورندگان",
+    "title": "دانلود و خرید کتاب‌های پدیدآورندگان",
+    "slug": "author",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 2,
+        "value": 0
+       }
+      ],
+      "slug": "author",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 2,
+    "value": 2072,
+    "label": "آنتوان دوسنت اگزوپری",
+    "title": "دانلود و خرید کتاب‌های آنتوان دوسنت اگزوپری",
+    "slug": "author/آنتوان-دوسنت-اگزوپری",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 2,
+        "value": 2072
+       }
+      ],
+      "slug": "author/آنتوان-دوسنت-اگزوپری",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   }
+  ]
+ },
+ "additionalData": {
+  "authorInfo": {
+   "id": 2072,
+   "firstName": "آنتوان",
+   "lastName": "دوسنت اگزوپری",
+   "nationality": {
+    "Id": 254,
+    "Title": "فرانسوی"
+   },
+   "birthDate": "1900-06-29T00:00:00",
+   "deathDate": "1944-07-31T00:00:00",
+   "imageUrl": "https://img.taaghche.com/author/63790165711979031454.jpg"
+  }
+ },
+ "tpv": "General-Author-2072",
+ "hasMore": false,
+ "nextOffset": "4-0-0-0",
+ "isPlayable": false,
+ "bookCardView": 0,
+ "noIndex": false
+}

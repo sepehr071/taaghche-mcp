@@ -1,0 +1,844 @@
+{
+ "boxes": [
+  {
+   "type": 3,
+   "title": "",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "contentConfig": {
+    "type": 0,
+    "content": "<p>داستان‌ها همچون جادو ما را با خود به دنیاهای متفاوت در فرهنگ‌ها و سرزمین‌های متفاوت می‌برند. خواندن هر داستان مانند یک زندگی جدید است و تجربه‌ای فراتر از زندگی روزمره برای ما رقم می‌زند. وقتی یک داستان خارجی را می‌خوانیم در کنار این تجربه با فرهنگ‌ها، اندیشه‌ها و شیوه‌های روایت و داستان‌گویی دیگر ملت‌ها آشنا می‌شویم. طاقچه مجموعه‌ای از بهترین کتاب‌های الکترونیکی و صوتی در این دسته‌بندی را برای دانلود و شنیدن فراهم کرده است. در ادامه به جزئیات بیشتری درباره‌ی این دسته‌بندی می‌پردازیم.</p><h2 c...",
+    "isHtml": false
+   }
+  },
+  {
+   "type": 1,
+   "title": "کتاب‌های الکترونیکی داستان خارجی",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "bookData": {
+    "books": [
+     {
+      "id": 19096,
+      "title": "مسخ",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-04-15T17:51:22.49",
+      "creationDate": "2017-05-16T18:14:31.353",
+      "persianShortDate": "اردیبهشت ۱۳۹۶",
+      "PublisherID": 28,
+      "publisherSlug": "طاقچه",
+      "publisherShouldIndex": true,
+      "price": 5000.0,
+      "numberOfPages": 71,
+      "rating": 3.60268456375839,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 127
+       },
+       {
+        "value": 2.0,
+        "count": 70
+       },
+       {
+        "value": 3.0,
+        "count": 106
+       },
+       {
+        "value": 4.0,
+        "count": 111
+       },
+       {
+        "value": 5.0,
+        "count": 331
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 5000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "44134312-76d4-4137-9017-3a2fcbc8766d.2",
+      "coverUri": "https://img.taaghche.com/frontCover/19096.jpg",
+      "shareText": "«مسخ» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/19096",
+      "publisher": "طاقچه",
+      "authors": [
+       {
+        "id": 443,
+        "firstName": "صادق",
+        "lastName": "هدایت",
+        "type": 2,
+        "slug": "author/صادق-هدایت",
+        "shouldIndex": true
+       },
+       {
+        "id": 818,
+        "firstName": "فرانتس",
+        "lastName": "کافکا",
+        "type": 1,
+        "slug": "author/فرانتس-کافکا",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 452,
+        "tag": "داستان آلمانی",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 4248,
+        "tag": "مجموعه اقتباس سینمایی",
+        "slug": "سینمای-اقتباسی-از-ادبیات",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 8949,
+        "name": "ادبیات آلمان",
+        "kind": 2,
+        "slug": "tag/ادبیات-آلمان"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 0.99,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 745,
+      "isEpub": true,
+      "descriptionLastUpdate": "2026-04-15T17:51:22.49"
+     },
+     {
+      "id": 1176,
+      "title": "قمارباز",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-06-22T16:13:21.18",
+      "creationDate": "2015-05-05T15:09:08.927",
+      "persianShortDate": "اردیبهشت ۱۳۹۴",
+      "PublisherID": 73,
+      "publisherSlug": "انتشارات-جامی",
+      "publisherShouldIndex": true,
+      "price": 90000.0,
+      "numberOfPages": 224,
+      "rating": 3.6509186351706,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 186
+       },
+       {
+        "value": 2.0,
+        "count": 124
+       },
+       {
+        "value": 3.0,
+        "count": 126
+       },
+       {
+        "value": 4.0,
+        "count": 174
+       },
+       {
+        "value": 5.0,
+        "count": 533
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 90000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1391/08/24",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "44134312-76d4-4137-9017-3a2fcbc8766d.2",
+      "coverUri": "https://img.taaghche.com/frontCover/1176.jpg",
+      "shareText": "«قمارباز» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/1176",
+      "publisher": "انتشارات جامی",
+      "authors": [
+       {
+        "id": 419,
+        "firstName": "فئودور",
+        "lastName": "داستایفسکی",
+        "type": 1,
+        "slug": "author/فئودور-داستایفسکی",
+        "shouldIndex": true
+       },
+       {
+        "id": 26427,
+        "firstName": "جلال",
+        "lastName": "آل احمد",
+        "type": 2,
+        "slug": "author/جلال-آل-احمد",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [],
+      "seriesAndTagCollections": [
+       {
+        "id": 9012,
+        "name": "ادبیات روسیه",
+        "kind": 2,
+        "slug": "tag/ادبیات-روسیه"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.0,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 1143,
+      "isEpub": true,
+      "descriptionLastUpdate": "2025-12-23T14:43:13.51"
+     },
+     {
+      "id": 2199,
+      "title": "سوءتفاهم",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 0,
+      "lastUpdate": "2026-09-14T14:35:41.54",
+      "creationDate": "2015-05-25T20:30:01.19",
+      "persianShortDate": "خرداد ۱۳۹۴",
+      "PublisherID": 73,
+      "publisherSlug": "انتشارات-جامی",
+      "publisherShouldIndex": true,
+      "price": 70000.0,
+      "numberOfPages": 88,
+      "rating": 3.54279279279279,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 60
+       },
+       {
+        "value": 2.0,
+        "count": 52
+       },
+       {
+        "value": 3.0,
+        "count": 82
+       },
+       {
+        "value": 4.0,
+        "count": 87
+       },
+       {
+        "value": 5.0,
+        "count": 163
+       }
+      ],
+      "types": [
+       {
+        "id": 1,
+        "name": "الکترونیکی",
+        "price": 70000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "sticker": "https://img.taaghche.com/sticker/binahayat.png",
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "publishDate": "1391/08/24",
+      "destination": 0,
+      "type": "Text",
+      "productClass": 1,
+      "prefix": "کتاب",
+      "noFollow": false,
+      "pdpSlug": "book",
+      "refId": "44134312-76d4-4137-9017-3a2fcbc8766d.2",
+      "coverUri": "https://img.taaghche.com/frontCover/2199.jpg",
+      "shareText": "«سوءتفاهم» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/2199",
+      "publisher": "انتشارات جامی",
+      "authors": [
+       {
+        "id": 20,
+        "firstName": "آلبر",
+        "lastName": "کامو",
+        "type": 1,
+        "slug": "author/آلبر-کامو",
+        "shouldIndex": true
+       },
+       {
+        "id": 34541,
+        "firstName": "جلال",
+        "lastName": "آل‌ احمد",
+        "type": 2,
+        "slug": "author/جلال-آل-احمد",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 1400,
+        "tag": "نمایشنامه فرانسوی",
+        "shouldIndex": false
+       },
+       {
+        "tagID": 2246,
+        "tag": "برنده نوبل",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       }
+      ],
+      "subscriptionAvailable": true,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 4.62,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 0,
+      "rateCounts": 444,
+      "isEpub": true,
+      "descriptionLastUpdate": "2026-09-14T14:35:41.54"
+     }
+    ],
+    "layout": 1,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 7,
+    "filters": {
+     "list": [
+      {
+       "type": 1,
+       "value": 68
+      },
+      {
+       "type": 21,
+       "value": 0
+      },
+      {
+       "type": 50,
+       "value": 0
+      }
+     ],
+     "refId": "44134312-76d4-4137-9017-3a2fcbc8766d.2",
+     "shouldIndex": false
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  },
+  {
+   "type": 1,
+   "title": "کتاب‌های صوتی داستان خارجی",
+   "subtitle": "",
+   "backgroundStyle": 1,
+   "bookData": {
+    "books": [
+     {
+      "id": 59164,
+      "title": "مغازه خودکشی",
+      "sourceBookId": 74406,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 74406,
+      "lastUpdate": "2026-02-14T14:24:59.31",
+      "creationDate": "2019-07-22T10:01:38.443",
+      "persianShortDate": "تیر ۱۳۹۸",
+      "PublisherID": 1767,
+      "publisherSlug": "رادیو-گوشه",
+      "publisherShouldIndex": true,
+      "price": 154000.0,
+      "numberOfPages": 0,
+      "rating": 3.99733033581565,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 890
+       },
+       {
+        "value": 2.0,
+        "count": 478
+       },
+       {
+        "value": 3.0,
+        "count": 628
+       },
+       {
+        "value": 4.0,
+        "count": 886
+       },
+       {
+        "value": 5.0,
+        "count": 4235
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 154000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "adea6e15-43db-40e6-8634-4d43106fac44.3",
+      "coverUri": "https://img.taaghche.com/audioCover/59164.jpg",
+      "shareText": "«مغازه خودکشی» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/59164",
+      "publisher": "رادیو گوشه",
+      "authors": [
+       {
+        "id": 18535,
+        "firstName": "ژان",
+        "lastName": "تولی",
+        "type": 1,
+        "slug": "author/ژان-تولی",
+        "shouldIndex": true
+       },
+       {
+        "id": 18536,
+        "firstName": "احسان",
+        "lastName": "کرم‌ویسی",
+        "type": 2,
+        "slug": "author/احسان-کرم-ویسی",
+        "shouldIndex": true
+       },
+       {
+        "id": 18537,
+        "firstName": "هوتن",
+        "lastName": "شکیبا",
+        "type": 4,
+        "slug": "author/هوتن-شکیبا",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 3288,
+        "tag": "مجموعه کتاب باز",
+        "slug": "کتاب-های-معرفی-شده-در-برنامه-کتاب-باز",
+        "shouldIndex": true
+       },
+       {
+        "tagID": 4926,
+        "tag": "مسابقه دانشگاه شریف",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.69,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 11213,
+      "rateCounts": 7117,
+      "isEpub": false
+     },
+     {
+      "id": 72107,
+      "title": "شازده کوچولو",
+      "sourceBookId": 0,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 72107,
+      "correspondingBookId": 0,
+      "subtitle": "در دو اجرا: ۱- خوانش کامل کتاب ۲-اقتباس نمایشی، با موسیقی و آواز",
+      "lastUpdate": "2026-08-26T15:06:50.66",
+      "creationDate": "2020-04-15T16:26:17.343",
+      "persianShortDate": "فروردین ۱۳۹۹",
+      "PublisherID": 156,
+      "publisherSlug": "انتشارات-نگاه",
+      "publisherShouldIndex": true,
+      "price": 15000.0,
+      "numberOfPages": 0,
+      "rating": 4.368980405181,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 548
+       },
+       {
+        "value": 2.0,
+        "count": 241
+       },
+       {
+        "value": 3.0,
+        "count": 246
+       },
+       {
+        "value": 4.0,
+        "count": 393
+       },
+       {
+        "value": 5.0,
+        "count": 4594
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 15000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "adea6e15-43db-40e6-8634-4d43106fac44.3",
+      "coverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+      "shareText": "«شازده کوچولو» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/72107",
+      "publisher": "انتشارات نگاه",
+      "authors": [
+       {
+        "id": 2072,
+        "firstName": "آنتوان",
+        "lastName": "دوسنت اگزوپری",
+        "type": 1,
+        "slug": "author/آنتوان-دوسنت-اگزوپری",
+        "shouldIndex": true
+       },
+       {
+        "id": 752,
+        "firstName": "احمد",
+        "lastName": "شاملو",
+        "type": 2,
+        "slug": "author/احمد-شاملو",
+        "shouldIndex": true
+       },
+       {
+        "id": 6810,
+        "firstName": "جمعی از",
+        "lastName": "گویندگان",
+        "type": 4,
+        "slug": "author/جمعی-از-گویندگان",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 5109,
+        "tag": "کمپین دنیای قشنگ تو - ۹۹",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9035,
+        "name": "ادبیات فرانسه",
+        "kind": 2,
+        "slug": "tag/ادبیات-فرانسه"
+       },
+       {
+        "id": 14695,
+        "name": "۱۰۰ کتاب قرن لوموند",
+        "kind": 2,
+        "slug": "tag/۱۰۰-کتاب-قرن-لوموند"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 2.03,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 10621,
+      "rateCounts": 6022,
+      "isEpub": false,
+      "descriptionLastUpdate": "2026-08-26T14:52:19.05"
+     },
+     {
+      "id": 39467,
+      "title": "شرط‌بندی",
+      "sourceBookId": 17155,
+      "index": true,
+      "hasPhysicalEdition": false,
+      "canonicalId": 0,
+      "correspondingBookId": 17155,
+      "lastUpdate": "2026-09-13T15:23:07.483",
+      "creationDate": "2018-09-26T12:34:06.623",
+      "persianShortDate": "مهر ۱۳۹۷",
+      "PublisherID": 1008,
+      "publisherSlug": "انتشارات-ماه-آوا",
+      "publisherShouldIndex": true,
+      "price": 150000.0,
+      "numberOfPages": 0,
+      "rating": 4.42728297632469,
+      "rates": [
+       {
+        "value": 1.0,
+        "count": 119
+       },
+       {
+        "value": 2.0,
+        "count": 59
+       },
+       {
+        "value": 3.0,
+        "count": 91
+       },
+       {
+        "value": 4.0,
+        "count": 181
+       },
+       {
+        "value": 5.0,
+        "count": 1324
+       }
+      ],
+      "types": [
+       {
+        "id": 3,
+        "name": "صوتی",
+        "price": 150000.0,
+        "beforeOffPrice": 0.0
+       }
+      ],
+      "beforeOffPrice": 0,
+      "isRtl": true,
+      "showOverlay": true,
+      "destination": 0,
+      "type": "Audio",
+      "productClass": 2,
+      "prefix": "کتاب صوتی",
+      "noFollow": false,
+      "pdpSlug": "audiobook",
+      "refId": "adea6e15-43db-40e6-8634-4d43106fac44.3",
+      "coverUri": "https://img.taaghche.com/audioCover/39467.jpg",
+      "shareText": "«شرط‌بندی» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/39467",
+      "publisher": "انتشارات ماه آوا",
+      "authors": [
+       {
+        "id": 403,
+        "firstName": "آنتوان",
+        "lastName": "چخوف",
+        "type": 1,
+        "slug": "author/آنتوان-چخوف",
+        "shouldIndex": true
+       },
+       {
+        "id": 5296,
+        "firstName": "حسین",
+        "lastName": "کارگر بهبهانی",
+        "type": 2,
+        "slug": "author/حسین-کارگر-بهبهانی",
+        "shouldIndex": true
+       },
+       {
+        "id": 7524,
+        "firstName": "میلاد",
+        "lastName": "تمدن",
+        "type": 4,
+        "slug": "author/میلاد-تمدن",
+        "shouldIndex": true
+       }
+      ],
+      "labels": [
+       {
+        "tagID": 1365,
+        "tag": "داستان روسی",
+        "shouldIndex": false
+       }
+      ],
+      "seriesAndTagCollections": [
+       {
+        "id": 9012,
+        "name": "ادبیات روسیه",
+        "kind": 2,
+        "slug": "tag/ادبیات-روسیه"
+       }
+      ],
+      "subscriptionAvailable": false,
+      "state": 1,
+      "encrypted": true,
+      "currencyPrice": 5.66,
+      "currencyBeforeOffPrice": 0.0,
+      "sumDurationSeconds": 1485,
+      "rateCounts": 1774,
+      "isEpub": false,
+      "descriptionLastUpdate": "2026-09-13T15:23:07.483"
+     }
+    ],
+    "layout": 1,
+    "showPrice": false
+   },
+   "destination": {
+    "type": 2,
+    "order": 0,
+    "filters": {
+     "list": [
+      {
+       "type": 50,
+       "value": 1
+      },
+      {
+       "type": 1,
+       "value": 68
+      }
+     ],
+     "slug": "category/کتاب-داستان-صوتی-خارجی",
+     "refId": "adea6e15-43db-40e6-8634-4d43106fac44.3",
+     "shouldIndex": true
+    },
+    "navigationPage": 0,
+    "operationType": 0,
+    "bookId": 0
+   }
+  }
+ ],
+ "seoData": {
+  "title": "خرید و دانلود بهترین کتاب‌ داستان و رمان‌های خارجی",
+  "description": "جدیدترین و پرفروش‌ترین رمان‌ها و کتاب‌های داستان خارجی (pdf و epub) را با تخفیف ویژه از طاقچه خرید و دانلود کنید!"
+ },
+ "title": "کتاب‌های داستان خارجی",
+ "slug": "کتاب-داستان-خارجی",
+ "breadcrumb": {
+  "type": 1,
+  "value": 68,
+  "title": "داستان خارجی"
+ },
+ "breadcrumbV2": {
+  "breadcrumbs": [
+   {
+    "type": 0,
+    "value": 0,
+    "label": "طاقچه",
+    "title": "دانلود و خرید کتاب‌های طاقچه",
+    "slug": "",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 0,
+        "value": 0
+       }
+      ],
+      "slug": "",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 58,
+    "label": "داستان و رمان",
+    "title": "دانلود و خرید کتاب‌های داستان و رمان",
+    "slug": "category/کتاب-داستان-و-رمان",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 58
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-و-رمان",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 68,
+    "label": "داستان خارجی",
+    "title": "دانلود و خرید کتاب‌های داستان خارجی",
+    "slug": "category/کتاب-داستان-خارجی",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 68
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-خارجی",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   }
+  ]
+ },
+ "tpv": "General-Category-68",
+ "hasMore": false,
+ "nextOffset": "8-0-0-0",
+ "isPlayable": false,
+ "bookCardView": 0,
+ "noIndex": false
+}

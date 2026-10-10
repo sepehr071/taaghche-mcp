@@ -1,0 +1,335 @@
+{
+ "tabItems": {
+  "items": [
+   {
+    "id": 72107,
+    "refId": "elasticnew-0b542eba906e4fb294b9790e8dc8fb25-NaN-audioBook-72107-1",
+    "title": "شازده کوچولو",
+    "coverUri": "https://img.taaghche.com/audioCover/72107.jpg",
+    "publisher": "انتشارات نگاه",
+    "authors": [
+     {
+      "type": 1,
+      "firstName": "آنتوان",
+      "lastName": "دوسنت اگزوپری",
+      "slug": "author/آنتوان-دوسنت-اگزوپری"
+     },
+     {
+      "type": 2,
+      "firstName": "احمد",
+      "lastName": "شاملو",
+      "slug": "author/احمد-شاملو"
+     },
+     {
+      "type": 4,
+      "firstName": "جمعی از",
+      "lastName": "گویندگان",
+      "slug": "author/جمعی-از-گویندگان"
+     }
+    ],
+    "types": [
+     {
+      "id": 3,
+      "name": "صوتی",
+      "price": 15000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "rating": 4.368980405181003,
+    "price": 15000,
+    "beforeOffPrice": 0,
+    "rates": [
+     {
+      "value": 1.0,
+      "count": 548
+     },
+     {
+      "value": 2.0,
+      "count": 241
+     },
+     {
+      "value": 3.0,
+      "count": 246
+     },
+     {
+      "value": 4.0,
+      "count": 393
+     },
+     {
+      "value": 5.0,
+      "count": 4594
+     }
+    ],
+    "subscriptionAvailable": false
+   },
+   {
+    "id": 65661,
+    "refId": "elasticnew-0b542eba906e4fb294b9790e8dc8fb25-NaN-audioBook-65661-1",
+    "title": "شازده کوچولو",
+    "coverUri": "https://img.taaghche.com/audioCover/65661.jpg",
+    "publisher": "آوانامه",
+    "authors": [
+     {
+      "type": 1,
+      "firstName": "آنتوان",
+      "lastName": "دوسنت اگزوپری",
+      "slug": "author/آنتوان-دوسنت-اگزوپری"
+     },
+     {
+      "type": 2,
+      "firstName": "م",
+      "lastName": "کاشیگر",
+      "slug": "author/مدیا-کاشیگر"
+     },
+     {
+      "type": 4,
+      "firstName": "بهنوش",
+      "lastName": "فرهودی",
+      "slug": "author/بهنوش-فرهودی"
+     }
+    ],
+    "types": [
+     {
+      "id": 3,
+      "name": "صوتی",
+      "price": 270000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "rating": 4.434354485776805,
+    "price": 270000,
+    "beforeOffPrice": 0,
+    "rates": [
+     {
+      "value": 1.0,
+      "count": 65
+     },
+     {
+      "value": 2.0,
+      "count": 35
+     },
+     {
+      "value": 3.0,
+      "count": 45
+     },
+     {
+      "value": 4.0,
+      "count": 62
+     },
+     {
+      "value": 5.0,
+      "count": 708
+     }
+    ],
+    "subscriptionAvailable": false
+   },
+   {
+    "id": 6426,
+    "refId": "elasticnew-0b542eba906e4fb294b9790e8dc8fb25-NaN-book-6426-1",
+    "title": "شازده کوچولو",
+    "coverUri": "https://img.taaghche.com/frontCover/6426.jpg",
+    "publisher": "کتاب کوله پشتی",
+    "authors": [
+     {
+      "type": 1,
+      "firstName": "آنتوان",
+      "lastName": "دوسنت اگزوپری",
+      "slug": "author/آنتوان-دوسنت-اگزوپری"
+     },
+     {
+      "type": 2,
+      "firstName": "مریم",
+      "lastName": "صبوری",
+      "slug": "author/مریم-صبوری"
+     }
+    ],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 58500.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "rating": 4.405078597339783,
+    "price": 58500,
+    "beforeOffPrice": 0,
+    "rates": [
+     {
+      "value": 1.0,
+      "count": 61
+     },
+     {
+      "value": 2.0,
+      "count": 40
+     },
+     {
+      "value": 3.0,
+      "count": 34
+     },
+     {
+      "value": 4.0,
+      "count": 60
+     },
+     {
+      "value": 5.0,
+      "count": 632
+     }
+    ],
+    "subscriptionAvailable": true
+   },
+   {
+    "id": 25986,
+    "refId": "elasticnew-0b542eba906e4fb294b9790e8dc8fb25-NaN-book-25986-1",
+    "title": "شازده کوچولو",
+    "coverUri": "https://img.taaghche.com/frontCover/25986.jpg",
+    "publisher": "انتشارات پر",
+    "authors": [
+     {
+      "type": 1,
+      "firstName": "آنتوان",
+      "lastName": "دوسنت اگزوپری",
+      "slug": "author/آنتوان-دوسنت-اگزوپری"
+     },
+     {
+      "type": 2,
+      "firstName": "میثم",
+      "lastName": "رحیمی",
+      "slug": "author/میثم-رحیمی"
+     }
+    ],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 20000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "rating": 4.286195286195286,
+    "price": 20000,
+    "beforeOffPrice": 0,
+    "rates": [
+     {
+      "value": 1.0,
+      "count": 30
+     },
+     {
+      "value": 2.0,
+      "count": 24
+     },
+     {
+      "value": 3.0,
+      "count": 7
+     },
+     {
+      "value": 4.0,
+      "count": 9
+     },
+     {
+      "value": 5.0,
+      "count": 227
+     }
+    ],
+    "subscriptionAvailable": true
+   }
+  ],
+  "hasMore": true,
+  "nextOffset": "12"
+ },
+ "sortOptions": [
+  {
+   "id": 0,
+   "name": "مرتبط‌ترین",
+   "eventName": "Website_Search_Sort_Related"
+  },
+  {
+   "id": 1,
+   "name": "پرفروش‌ترین",
+   "eventName": "Website_Search_Sort_BestSelling"
+  },
+  {
+   "id": 2,
+   "name": "کوتاه‌ترین",
+   "eventName": "Website_Search_Sort_Short"
+  },
+  {
+   "id": 3,
+   "name": "ارزان‌ترین",
+   "eventName": "Website_Search_Sort_Cheap"
+  },
+  {
+   "id": 4,
+   "name": "جدید‌ترین",
+   "eventName": "Website_Search_Sort_New"
+  },
+  {
+   "id": 5,
+   "name": "محبوب‌ترین",
+   "eventName": "Website_Search_Sort_Fav"
+  }
+ ],
+ "tabFilters": [
+  {
+   "keyValue": "inSubscription",
+   "type": 1,
+   "filterEvents": [
+    {
+     "filterOptionsId": 0,
+     "eventName": "Website_Search_Filter_allSub"
+    }
+   ],
+   "defaultValue": 0,
+   "id": 0,
+   "name": "فقط بی‌نهایت"
+  },
+  {
+   "keyValue": "type",
+   "type": 2,
+   "filterOptions": [
+    {
+     "id": 0,
+     "name": "همه"
+    },
+    {
+     "id": 1,
+     "name": "الکترونیکی"
+    },
+    {
+     "id": 2,
+     "name": "صوتی"
+    }
+   ],
+   "filterEvents": [
+    {
+     "filterOptionsId": 0,
+     "eventName": "Website_Search_Filter_subAll"
+    },
+    {
+     "filterOptionsId": 1,
+     "eventName": "Website_Search_Filter_subElc"
+    },
+    {
+     "filterOptionsId": 2,
+     "eventName": "Website_Search_Filter_subAud"
+    }
+   ],
+   "defaultValue": 0,
+   "id": 1,
+   "name": "نوع کتاب"
+  },
+  {
+   "keyValue": "hasOff",
+   "type": 1,
+   "filterEvents": [
+    {
+     "filterOptionsId": 0,
+     "eventName": "Website_Search_Filter_allOff"
+    }
+   ],
+   "defaultValue": 0,
+   "id": 2,
+   "name": "فقط تخفیف‌دار"
+  }
+ ]
+}

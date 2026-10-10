@@ -1,0 +1,53 @@
+{
+ "suggestions": [
+  {
+   "value": "<span>شازده</span> کوچولو (انتشارات نگاه)",
+   "data": {
+    "type": "audioBook",
+    "id": 72107,
+    "content": "شازده کوچولو",
+    "category": "کتاب صوتی",
+    "subscription": false,
+    "clickDocId": "book_72107",
+    "refId": "elasticnew-46ecdeb43f7c4226abf947bcc58f971f-1-audioBook-72107-2"
+   }
+  },
+  {
+   "value": "<span>شازده</span> کوچولو (آوانامه)",
+   "data": {
+    "type": "audioBook",
+    "id": 65661,
+    "content": "شازده کوچولو",
+    "category": "کتاب صوتی",
+    "subscription": false,
+    "clickDocId": "book_65661",
+    "refId": "elasticnew-46ecdeb43f7c4226abf947bcc58f971f-2-audioBook-65661-2"
+   }
+  },
+  {
+   "value": "<span>شازده</span> کوچولو (کتاب کوله پشتی)",
+   "data": {
+    "type": "book",
+    "id": 6426,
+    "content": "شازده کوچولو",
+    "category": "کتاب الکترونیکی",
+    "subscription": true,
+    "clickDocId": "book_6426",
+    "refId": "elasticnew-46ecdeb43f7c4226abf947bcc58f971f-3-book-6426-2"
+   }
+  },
+  {
+   "value": "<span>شازده</span> کوچولو (انتشارات پر)",
+   "data": {
+    "type": "book",
+    "id": 25986,
+    "content": "شازده کوچولو",
+    "category": "کتاب الکترونیکی",
+    "subscription": true,
+    "clickDocId": "book_25986",
+    "refId": "elasticnew-46ecdeb43f7c4226abf947bcc58f971f-4-book-25986-2"
+   }
+  }
+ ],
+ "term": "شازده"
+}

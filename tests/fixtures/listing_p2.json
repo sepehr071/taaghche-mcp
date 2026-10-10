@@ -1,0 +1,370 @@
+{
+ "seoData": {},
+ "breadcrumb": {
+  "type": 1,
+  "value": 68,
+  "title": "داستان خارجی"
+ },
+ "breadcrumbV2": {
+  "breadcrumbs": [
+   {
+    "type": 0,
+    "value": 0,
+    "label": "طاقچه",
+    "title": "دانلود و خرید کتاب‌های طاقچه",
+    "slug": "",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 0,
+        "value": 0
+       }
+      ],
+      "slug": "",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 58,
+    "label": "داستان و رمان",
+    "title": "دانلود و خرید کتاب‌های داستان و رمان",
+    "slug": "category/کتاب-داستان-و-رمان",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 58
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-و-رمان",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 68,
+    "label": "داستان خارجی",
+    "title": "دانلود و خرید کتاب‌های داستان خارجی",
+    "slug": "category/کتاب-داستان-خارجی",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 68
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-خارجی",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   }
+  ]
+ },
+ "bookList": {
+  "books": [
+   {
+    "id": 340709,
+    "title": "قصه های عجیب",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-06T10:59:47.89",
+    "creationDate": "2026-10-05T21:08:33.827",
+    "persianShortDate": "مهر ۱۴۰۵",
+    "PublisherID": 77,
+    "publisherSlug": "نشر-هیرمند",
+    "publisherShouldIndex": true,
+    "price": 27500.0,
+    "numberOfPages": 110,
+    "rates": [],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 27500.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "beforeOffPrice": 0,
+    "isRtl": true,
+    "showOverlay": true,
+    "publishDate": "1400/01/01",
+    "destination": 0,
+    "type": "Text",
+    "productClass": 1,
+    "prefix": "کتاب",
+    "noFollow": false,
+    "pdpSlug": "book",
+    "coverUri": "https://img.taaghche.com/frontCover/340709.jpg",
+    "shareText": "«قصه های عجیب» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/340709",
+    "publisher": "نشر هیرمند",
+    "authors": [
+     {
+      "id": 154363,
+      "firstName": "هلن کرسول",
+      "lastName": "",
+      "type": 5,
+      "slug": "author/هلن-کرسول",
+      "shouldIndex": true
+     },
+     {
+      "id": 11909,
+      "firstName": "امیرمهدی",
+      "lastName": "حقیقت",
+      "type": 2,
+      "slug": "author/امیرمهدی-حقیقت",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [
+     {
+      "id": 13329,
+      "name": "سهراب نشر هیرمند",
+      "kind": 1
+     }
+    ],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": true,
+    "currencyPrice": 3.01,
+    "currencyBeforeOffPrice": 0.0,
+    "sumDurationSeconds": 0,
+    "rateCounts": 0,
+    "isEpub": false,
+    "englishTitle": "Mystery stories",
+    "descriptionLastUpdate": "2026-10-06T10:59:47.89"
+   },
+   {
+    "id": 340707,
+    "title": "قصه های ارواح",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-06T13:30:45.437",
+    "creationDate": "2026-10-05T20:53:51.55",
+    "persianShortDate": "مهر ۱۴۰۵",
+    "PublisherID": 77,
+    "publisherSlug": "نشر-هیرمند",
+    "publisherShouldIndex": true,
+    "price": 27500.0,
+    "numberOfPages": 130,
+    "rates": [],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 27500.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "beforeOffPrice": 0,
+    "isRtl": true,
+    "showOverlay": true,
+    "publishDate": "1400/01/01",
+    "destination": 0,
+    "type": "Text",
+    "productClass": 1,
+    "prefix": "کتاب",
+    "noFollow": false,
+    "pdpSlug": "book",
+    "coverUri": "https://img.taaghche.com/frontCover/340707.jpg",
+    "shareText": "«قصه های ارواح» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/340707",
+    "publisher": "نشر هیرمند",
+    "authors": [
+     {
+      "id": 8677,
+      "firstName": "رابرت",
+      "lastName": "وستال",
+      "type": 5,
+      "slug": "author/رابرت-وستال",
+      "shouldIndex": true
+     },
+     {
+      "id": 11909,
+      "firstName": "امیرمهدی",
+      "lastName": "حقیقت",
+      "type": 2,
+      "slug": "author/امیرمهدی-حقیقت",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [
+     {
+      "id": 8866,
+      "name": "فارسی",
+      "kind": 2,
+      "slug": "tag/فارسی"
+     },
+     {
+      "id": 8974,
+      "name": "ادبیات انگلستان",
+      "kind": 2,
+      "slug": "tag/ادبیات-انگلستان"
+     },
+     {
+      "id": 13329,
+      "name": "سهراب نشر هیرمند",
+      "kind": 1
+     },
+     {
+      "id": 15290,
+      "name": "ادبیات نوجوان نشر هیرمند",
+      "kind": 1
+     }
+    ],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": true,
+    "currencyPrice": 3.01,
+    "currencyBeforeOffPrice": 0.0,
+    "sumDurationSeconds": 0,
+    "rateCounts": 0,
+    "isEpub": false,
+    "englishTitle": "Ghost Stories",
+    "descriptionLastUpdate": "2026-10-06T13:30:45.437"
+   },
+   {
+    "id": 340094,
+    "title": "همسر شوهر من",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-06T21:05:47.133",
+    "creationDate": "2026-10-01T11:08:42.263",
+    "persianShortDate": "مهر ۱۴۰۵",
+    "PublisherID": 6487,
+    "publisherSlug": "انتشارات-چترا",
+    "publisherShouldIndex": true,
+    "price": 250000.0,
+    "numberOfPages": 344,
+    "rates": [],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 250000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "beforeOffPrice": 0,
+    "isRtl": true,
+    "showOverlay": true,
+    "PhysicalPrice": 840000,
+    "publishDate": "1405/07/09",
+    "destination": 0,
+    "type": "Text",
+    "productClass": 1,
+    "prefix": "کتاب",
+    "noFollow": false,
+    "pdpSlug": "book",
+    "coverUri": "https://img.taaghche.com/frontCover/340094.jpg",
+    "shareText": "«همسر شوهر من» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/340094",
+    "publisher": "انتشارات چترا",
+    "authors": [
+     {
+      "id": 36678,
+      "firstName": "آلیس",
+      "lastName": "فینی",
+      "type": 1,
+      "slug": "author/آلیس-فینی",
+      "shouldIndex": true
+     },
+     {
+      "id": 126208,
+      "firstName": "نسیم",
+      "lastName": "شکاری",
+      "type": 2,
+      "slug": "author/نسیم-شکاری",
+      "shouldIndex": true
+     },
+     {
+      "id": 85439,
+      "firstName": "نوشین",
+      "lastName": "طیبی",
+      "type": 3,
+      "slug": "author/نوشین-طیبی",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [
+     {
+      "id": 8974,
+      "name": "ادبیات انگلستان",
+      "kind": 2,
+      "slug": "tag/ادبیات-انگلستان"
+     }
+    ],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": true,
+    "currencyPrice": 10.0,
+    "currencyBeforeOffPrice": 0.0,
+    "sumDurationSeconds": 0,
+    "rateCounts": 0,
+    "isEpub": false,
+    "englishTitle": "My husband's wife",
+    "descriptionLastUpdate": "2026-10-06T21:05:47.133"
+   }
+  ],
+  "tabSeparated": false,
+  "spinnerItems": [
+   {
+    "id": 5,
+    "title": "تازه‌ها"
+   },
+   {
+    "id": 1,
+    "title": "داغ‌ترین‌ها"
+   },
+   {
+    "id": 7,
+    "title": "بیشترین دریافت"
+   }
+  ],
+  "currentSpinnerPosition": 0
+ },
+ "tpv": "General-Category-68",
+ "hasMore": true,
+ "nextOffset": "0-0-32-16",
+ "isPlayable": false,
+ "bookCardView": 0,
+ "noIndex": false
+}

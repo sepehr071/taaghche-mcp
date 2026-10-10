@@ -1,0 +1,450 @@
+{
+ "seoData": {},
+ "breadcrumb": {
+  "type": 1,
+  "value": 68,
+  "title": "داستان خارجی"
+ },
+ "breadcrumbV2": {
+  "breadcrumbs": [
+   {
+    "type": 0,
+    "value": 0,
+    "label": "طاقچه",
+    "title": "دانلود و خرید کتاب‌های طاقچه",
+    "slug": "",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 0,
+        "value": 0
+       }
+      ],
+      "slug": "",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 58,
+    "label": "داستان و رمان",
+    "title": "دانلود و خرید کتاب‌های داستان و رمان",
+    "slug": "category/کتاب-داستان-و-رمان",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 58
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-و-رمان",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   },
+   {
+    "type": 1,
+    "value": 68,
+    "label": "داستان خارجی",
+    "title": "دانلود و خرید کتاب‌های داستان خارجی",
+    "slug": "category/کتاب-داستان-خارجی",
+    "destination": {
+     "type": 2,
+     "order": 0,
+     "filters": {
+      "list": [
+       {
+        "type": 1,
+        "value": 68
+       },
+       {
+        "type": 50,
+        "value": 0
+       }
+      ],
+      "slug": "category/کتاب-داستان-خارجی",
+      "shouldIndex": true
+     },
+     "navigationPage": 0,
+     "operationType": 0,
+     "bookId": 0
+    }
+   }
+  ]
+ },
+ "bookList": {
+  "books": [
+   {
+    "id": 329570,
+    "title": "جنایت و مکافات",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-10T07:09:12.37",
+    "creationDate": "2026-07-29T13:17:24.42",
+    "persianShortDate": "مرداد ۱۴۰۵",
+    "PublisherID": 968,
+    "publisherSlug": "نشر-مصدق",
+    "publisherShouldIndex": true,
+    "price": 420000.0,
+    "numberOfPages": 672,
+    "rating": 5.0,
+    "rates": [
+     {
+      "value": 5.0,
+      "count": 1
+     }
+    ],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 420000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "beforeOffPrice": 0,
+    "isRtl": true,
+    "showOverlay": true,
+    "PhysicalPrice": 1750000,
+    "publishDate": "1404/01/01",
+    "destination": 0,
+    "type": "Text",
+    "productClass": 1,
+    "prefix": "کتاب",
+    "noFollow": false,
+    "pdpSlug": "book",
+    "coverUri": "https://img.taaghche.com/frontCover/329570.jpg",
+    "shareText": "«جنایت و مکافات» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/329570",
+    "publisher": "نشر مصدق",
+    "authors": [
+     {
+      "id": 419,
+      "firstName": "فئودور",
+      "lastName": "داستایفسکی",
+      "type": 1,
+      "slug": "author/فئودور-داستایفسکی",
+      "shouldIndex": true
+     },
+     {
+      "id": 79418,
+      "firstName": "مهری",
+      "lastName": "آهی",
+      "type": 2,
+      "slug": "author/مهری-آهی",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [
+     {
+      "id": 8866,
+      "name": "فارسی",
+      "kind": 2,
+      "slug": "tag/فارسی"
+     }
+    ],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": true,
+    "currencyPrice": 6.49,
+    "currencyBeforeOffPrice": 0.0,
+    "sumDurationSeconds": 0,
+    "rateCounts": 1,
+    "isEpub": true,
+    "descriptionLastUpdate": "2026-10-10T07:09:12.37"
+   },
+   {
+    "id": 339866,
+    "title": "آرسس (جلد دوم)",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-10T15:19:52.987",
+    "creationDate": "2026-09-29T13:46:54.26",
+    "persianShortDate": "مهر ۱۴۰۵",
+    "PublisherID": 1455,
+    "publisherSlug": "انتشارات-ضامن-آهو",
+    "publisherShouldIndex": true,
+    "price": 86526.0,
+    "numberOfPages": 0,
+    "rating": 4.42857142857143,
+    "rates": [
+     {
+      "value": 1.0,
+      "count": 1
+     },
+     {
+      "value": 5.0,
+      "count": 6
+     }
+    ],
+    "types": [
+     {
+      "id": 3,
+      "name": "صوتی",
+      "price": 86526.0,
+      "beforeOffPrice": 288420.0
+     }
+    ],
+    "sticker": "https://img.taaghche.com/sticker/off70.png",
+    "offSticker": "https://img.taaghche.com/sticker/off70.png",
+    "beforeOffPrice": 288420,
+    "offText": "تخفیف ۷۰٪",
+    "priceColor": "#ff0000",
+    "isRtl": true,
+    "showOverlay": true,
+    "publishDate": "1405/07/01",
+    "destination": 0,
+    "type": "Audio",
+    "productClass": 2,
+    "prefix": "کتاب صوتی",
+    "noFollow": false,
+    "pdpSlug": "audiobook",
+    "coverUri": "https://img.taaghche.com/audioCover/339866.jpg",
+    "shareText": "«آرسس (جلد دوم)» را از طاقچه دریافت کنید\nhttps://taaghche.com/audiobook/339866",
+    "publisher": "انتشارات ضامن آهو",
+    "authors": [
+     {
+      "id": 149840,
+      "firstName": "احمد",
+      "lastName": "آل حمدان",
+      "type": 1,
+      "slug": "author/احمد-آل-حمدان",
+      "shouldIndex": true
+     },
+     {
+      "id": 149841,
+      "firstName": "سیده نرگس",
+      "lastName": "مهدوی",
+      "type": 2,
+      "slug": "author/سیده-نرگس-مهدوی",
+      "shouldIndex": true
+     },
+     {
+      "id": 76814,
+      "firstName": "مهدی",
+      "lastName": "سعادتی",
+      "type": 4,
+      "slug": "author/مهدی-سعادتی",
+      "shouldIndex": true
+     },
+     {
+      "id": 149857,
+      "firstName": "مهسا",
+      "lastName": "عزت پناه",
+      "type": 4,
+      "slug": "author/مهسا-عزت-پناه",
+      "shouldIndex": true
+     },
+     {
+      "id": 142010,
+      "firstName": "تهمینه",
+      "lastName": "نبی",
+      "type": 4,
+      "slug": "author/تهمینه-نبی",
+      "shouldIndex": true
+     },
+     {
+      "id": 153181,
+      "firstName": "یوسف",
+      "lastName": "شیرانی",
+      "type": 4,
+      "slug": "author/یوسف-شیرانی",
+      "shouldIndex": true
+     },
+     {
+      "id": 113011,
+      "firstName": "علی اعتمادی",
+      "lastName": "",
+      "type": 4,
+      "slug": "author/علی-اعتمادی",
+      "shouldIndex": true
+     },
+     {
+      "id": 45363,
+      "firstName": "مهدی",
+      "lastName": "کرمی",
+      "type": 4,
+      "slug": "author/مهدی-کرمی",
+      "shouldIndex": true
+     },
+     {
+      "id": 153182,
+      "firstName": "ابوالفضل",
+      "lastName": "شاکری",
+      "type": 4,
+      "slug": "author/ابوالفضل-شاکری",
+      "shouldIndex": true
+     },
+     {
+      "id": 149861,
+      "firstName": "الهام",
+      "lastName": "هنرمند زاده",
+      "type": 4,
+      "slug": "author/الهام-هنرمند-زاده",
+      "shouldIndex": true
+     },
+     {
+      "id": 149862,
+      "firstName": "روشن",
+      "lastName": "صفایی",
+      "type": 4,
+      "slug": "author/روشن-صفایی",
+      "shouldIndex": true
+     },
+     {
+      "id": 149858,
+      "firstName": "آرش",
+      "lastName": "سلطان آبادی",
+      "type": 4,
+      "slug": "author/آرش-سلطان-آبادی",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": false,
+    "currencyPrice": 1.88,
+    "currencyBeforeOffPrice": 6.26,
+    "sumDurationSeconds": 15114,
+    "rateCounts": 7,
+    "isEpub": false,
+    "descriptionLastUpdate": "2026-10-07T12:24:00.783"
+   },
+   {
+    "id": 335860,
+    "title": "بینایی",
+    "sourceBookId": 0,
+    "index": true,
+    "hasPhysicalEdition": false,
+    "canonicalId": 0,
+    "correspondingBookId": 0,
+    "lastUpdate": "2026-10-10T10:54:55.473",
+    "creationDate": "2026-08-18T17:08:13.71",
+    "persianShortDate": "مرداد ۱۴۰۵",
+    "PublisherID": 1627,
+    "publisherSlug": "انتشارات-جمهوری",
+    "publisherShouldIndex": true,
+    "price": 80000.0,
+    "numberOfPages": 260,
+    "rates": [],
+    "types": [
+     {
+      "id": 1,
+      "name": "الکترونیکی",
+      "price": 80000.0,
+      "beforeOffPrice": 0.0
+     }
+    ],
+    "beforeOffPrice": 0,
+    "isRtl": true,
+    "showOverlay": true,
+    "publishDate": "1403/01/01",
+    "destination": 0,
+    "type": "Text",
+    "productClass": 1,
+    "prefix": "کتاب",
+    "noFollow": false,
+    "pdpSlug": "book",
+    "coverUri": "https://img.taaghche.com/frontCover/335860.jpg",
+    "shareText": "«بینایی» را از طاقچه دریافت کنید\nhttps://taaghche.com/book/335860",
+    "publisher": "انتشارات جمهوری",
+    "authors": [
+     {
+      "id": 3233,
+      "firstName": "ژوزه ",
+      "lastName": "ساراماگو",
+      "type": 1,
+      "slug": "author/ژوزه-ساراماگو",
+      "shouldIndex": true
+     },
+     {
+      "id": 5505,
+      "firstName": "حبیب ",
+      "lastName": "گوهری‌راد",
+      "type": 2,
+      "slug": "author/حبیب-گوهری-راد",
+      "shouldIndex": true
+     }
+    ],
+    "labels": [],
+    "seriesAndTagCollections": [
+     {
+      "id": 8866,
+      "name": "فارسی",
+      "kind": 2,
+      "slug": "tag/فارسی"
+     },
+     {
+      "id": 8877,
+      "name": "جایزه نوبل ادبیات",
+      "kind": 2,
+      "slug": "tag/جایزه-نوبل-ادبیات"
+     },
+     {
+      "id": 8995,
+      "name": "ادبیات پرتغال",
+      "kind": 2,
+      "slug": "tag/ادبیات-پرتغال"
+     }
+    ],
+    "subscriptionAvailable": false,
+    "state": 1,
+    "encrypted": true,
+    "currencyPrice": 4.82,
+    "currencyBeforeOffPrice": 0.0,
+    "sumDurationSeconds": 0,
+    "rateCounts": 0,
+    "isEpub": true,
+    "englishTitle": "Seeing",
+    "descriptionLastUpdate": "2026-10-10T10:54:55.473"
+   }
+  ],
+  "tabSeparated": false,
+  "spinnerItems": [
+   {
+    "id": 5,
+    "title": "تازه‌ها"
+   },
+   {
+    "id": 1,
+    "title": "داغ‌ترین‌ها"
+   },
+   {
+    "id": 7,
+    "title": "بیشترین دریافت"
+   }
+  ],
+  "currentSpinnerPosition": 0
+ },
+ "tpv": "General-Category-68",
+ "hasMore": true,
+ "nextOffset": "0-0-16-16",
+ "isPlayable": false,
+ "bookCardView": 0,
+ "noIndex": false
+}
