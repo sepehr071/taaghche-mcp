@@ -1,11 +1,28 @@
 <!-- mcp-name: io.github.sepehr071/taaghche-mcp -->
 
-# taaghche-mcp
+# taaghche-mcp: Taaghche MCP server for AI agents
 
-**Let your AI agent search Taaghche, the Iranian ebook and audiobook store: compare prices and formats, read reviews, browse bestsellers, new and free books.**
+**Unofficial, read-only MCP server that lets your AI agent search Taaghche (طاقچه), the Iranian ebook and audiobook store: compare prices and formats, read reviews, browse bestsellers, new and free books.**
 
-Unofficial and read-only. Covers about 220,000 Persian and translated ebooks and audiobooks on
-[taaghche.com](https://taaghche.com), prices in Toman. No API key, no account.
+Covers about 220,000 Persian and translated ebooks and audiobooks on
+[taaghche.com](https://taaghche.com), prices in Toman. No API key, no account. Works with Claude, Cursor and Copilot.
+
+[Quick start](#quick-start) · [Tools](#tools) · [FAQ](#faq) · [فارسی](#فارسی)
+
+---
+
+## For AI agents
+
+- **What:** Unofficial MCP server for Taaghche (طاقچه, taaghche.com), an Iranian ebook and audiobook store. Queries in Persian work best; prices in Toman.
+- **Install:** `claude mcp add taaghche -- uvx taaghche-mcp` (stdio, needs [uv](https://docs.astral.sh/uv/getting-started/installation/) and Python 3.10+).
+- **Auth:** none. Optional `TAAGHCHE_MCP_PROXY` sets an HTTP proxy for every request.
+- **Access:** read-only. It cannot log in, buy, review or touch a library.
+- **Tools:** 12, all prefixed `tg_`. Start with `tg_search`, `tg_book`, `tg_reviews`, `tg_bestsellers`, `tg_free_books`.
+- **Typical sequence:** `tg_search` -> `tg_book` -> `tg_reviews` or `tg_similar`.
+- **Use when:** the user wants to find an Iranian ebook or audiobook, compare price and format, read reader reviews, or list bestsellers, new releases and free books.
+- **Do not use when:** the user wants to buy, borrow or read a book, or needs the user's own library or orders.
+- **Output:** compact JSON. Prices in Toman (`final_price` is what you pay), rating 0-5, numeric book ids to pass between tools, paging with `next_cursor`.
+- **Machine-readable:** [server.json](https://github.com/sepehr071/taaghche-mcp/blob/main/server.json), and the catalog of all Iranian MCP servers [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp) (`TOOLS.md`, `servers.json`, `llms.txt`).
 
 ## Quick start
 
@@ -15,7 +32,7 @@ You need [uv](https://docs.astral.sh/uv/getting-started/installation/).
 claude mcp add taaghche -- uvx taaghche-mcp
 ```
 
-Any other MCP client (Claude Desktop, Cursor, VS Code): run `uvx taaghche-mcp` as a stdio server, e.g.
+Any other MCP client (Claude Desktop, Cursor, VS Code): run `uvx taaghche-mcp` as a stdio server (or `pip install taaghche-mcp` and run `taaghche-mcp`), e.g.
 
 ```json
 {
@@ -80,6 +97,43 @@ All 12 tools are annotated `readOnlyHint: true` and return compact structured JS
 |---|---|---|
 | `TAAGHCHE_MCP_PROXY` | unset | HTTP proxy for every request, e.g. `http://user:pass@host:port` (system proxy variables are ignored) |
 
+## FAQ
+
+**Is there a Taaghche API or MCP server for AI agents?**
+Yes: this unofficial MCP server wraps the public JSON endpoints the taaghche.com website itself uses, so Claude,
+Cursor or Copilot can search books and read prices and reviews.
+
+**Is it official, safe and free?**
+It is unofficial, open source (MIT) and free. It is read-only, needs no account or API key, and runs on your
+machine with no hosted server in between.
+
+**Can it buy or read a book for me?**
+No. It only reads public catalog data: search, prices, reviews and lists. Buying and reading happen on taaghche.com
+or in the Taaghche app.
+
+<a id="فارسی"></a>
+
+## فارسی: سرور MCP طاقچه
+
+<div dir="rtl">
+
+**taaghche-mcp** یک سرور MCP غیررسمی برای طاقچه است که به دستیار هوش مصنوعی شما (Claude، Cursor، Copilot و ...) اجازه
+می&zwnj;دهد در میان کتاب&zwnj;های الکترونیکی و صوتی ایران جستجو کند، قیمت و قالب نسخه&zwnj;ها را مقایسه کند، نظر
+خوانندگان را بخواند و پرفروش&zwnj;ها، تازه&zwnj;ها و کتاب&zwnj;های رایگان را ببیند.
+
+- فقط خواندنی است و حساب کاربری یا کلید API نمی&zwnj;خواهد.
+- همه قیمت&zwnj;ها به تومان است.
+
+بپرسید: «پرفروش&zwnj;ترین کتاب&zwnj;های روان&zwnj;شناسی زیر ۱۰۰ هزار تومان کدامند؟»
+
+</div>
+
+## Related servers
+
+- [Fidibo MCP server](https://github.com/sepehr071/fidibo-mcp) for Persian ebooks and audiobooks on Fidibo
+- [30book MCP server](https://github.com/sepehr071/30book-mcp) for printed Iranian and foreign books
+- All Iranian MCP servers: [awesome-iran-mcp](https://github.com/sepehr071/awesome-iran-mcp)
+
 ## Development
 
 ```bash
@@ -89,6 +143,8 @@ uv run ruff check . && uv run ruff format --check .
 uv run pytest -q            # offline, on recorded fixtures
 uv run pytest -m live -q    # real API
 ```
+
+If this saves you clicks, a star helps others find it.
 
 ## License
 
