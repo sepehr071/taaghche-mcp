@@ -1,11 +1,11 @@
 [project]
 name = "taaghche-mcp"
-version = "0.1.1"
+version = "0.1.2"
 description = "Unofficial read-only MCP server for Taaghche: search Persian ebooks and audiobooks, compare prices and formats, read reviews, browse bestsellers, new and free books."
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-authors = [{ name = "Sepehr", email = "sepehr@nextofx.com" }]
+authors = [{ name = "Sepehr Radmard", email = "sepehrr80@gmail.com" }]
 requires-python = ">=3.10"
 keywords = ["mcp", "model-context-protocol", "taaghche", "iran", "ebook", "audiobook", "books", "persian"]
 classifiers = [
