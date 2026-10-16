@@ -12,8 +12,9 @@ async def call(client, name, args):
 async def test_tg_categories(client):
     data = await call(client, "tg_categories", {})
     fiction = next(c for c in data["ebook"] if c["title"] == "داستان و رمان")
-    assert fiction["id"] == 58 and fiction["children"]
+    assert fiction["id"] == 58 and "children" not in fiction
     assert data["audiobook"] and any(c.get("slug") for c in data["audiobook"])
+    assert (await call(client, "tg_categories", {"format": "ebook", "group": 58}))["ebook"][0]["children"]
 
 
 async def test_tg_browse(client):

@@ -28,12 +28,9 @@ BOOK_TYPES = {"any": None, "ebook": 0, "audiobook": 1}
 
 Sort = Annotated[
     Literal["hot", "newest", "most_downloaded", "alphabetical", "cheapest", "most_expensive"],
-    Field(
-        description="hot (داغ‌ترین, the site's trending ranking), newest, most_downloaded (بیشترین دریافت), "
-        "alphabetical, cheapest (ascending price), most_expensive."
-    ),
+    Field(description="hot = trending ranking; cheapest = ascending price."),
 ]
-Slug = Annotated[str, Field(pattern=r"^[^/?#.%\s\\]{1,100}$")]
+Slug = Annotated[str, Field(max_length=200)]
 
 
 MAX_PAGES = 5  # pages scanned when a price ceiling is applied here
@@ -122,11 +119,8 @@ async def _browse(
 
 
 CategoryArg = Annotated[
-    int | str | None,
-    Field(
-        description="Category id (e.g. 68 = foreign fiction) or slug (e.g. 'کتاب-داستان-خارجی') from tg_categories; "
-        "includes sub-categories. Empty = the whole catalog.",
-    ),
+    int | Slug | None,
+    Field(description="Category id (e.g. 68) or slug (e.g. 'کتاب-داستان-خارجی') from tg_categories; empty = all."),
 ]
 
 
@@ -140,12 +134,9 @@ async def tg_browse(
     max_price: MaxPrice = None,
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """List books of a category (or the whole catalog) 16 at a time with a sort, a format and a price ceiling.
+    """List books of a category (or the whole catalog), 16 per page, by sort, format and price ceiling.
 
-    Use for "best cheap psychology audiobooks" style questions: category from tg_categories, format
-    audiobook, sort cheapest or hot, max_price in Toman. max_price is a ceiling the site cannot filter
-    on, so it is applied here to up to 5 pages (80 books; `scanned`), exact and fast with sort='cheapest'.
-    More: pass next_cursor back as cursor (same other arguments). For words use tg_search.
+    max_price is applied here over up to 5 pages (`scanned`); exact with sort='cheapest'. For words use tg_search.
     """
     return await _browse(category, format, sort, discounted_only, free_only, max_price, cursor)
 
@@ -156,11 +147,9 @@ async def tg_bestsellers(
     format: Format = "any",
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """The hottest books right now (Taaghche's «داغ‌ترین» ranking, the closest thing to a bestseller list; no sales
-    numbers are public), overall or in one category and format.
+    """Hottest books now (Taaghche's trending ranking; no sales numbers are public), overall or per category.
 
-    Use for "what is popular in X". Follow with tg_book for details. For the true best-selling order of a
-    keyword use tg_search(sort='bestselling').
+    For best-selling order of a keyword use tg_search(sort='bestselling'). Next: tg_book.
     """
     return await _browse(category, format, "hot", False, False, None, cursor)
 
@@ -171,10 +160,7 @@ async def tg_new_releases(
     format: Format = "any",
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """The newest books on Taaghche (most recently added first), overall or in one category and format.
-
-    Use for "what was published lately". Follow with tg_book for details.
-    """
+    """Newest books (most recently added first), overall or per category. Next: tg_book."""
     return await _browse(category, format, "newest", False, False, None, cursor)
 
 
@@ -185,10 +171,7 @@ async def tg_free_books(
     sort: Sort = "most_downloaded",
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """Free books and audiobooks (price 0), by default the most downloaded first, overall or in one category.
-
-    Use for "free books about X" or "free audiobook". Follow with tg_book for details.
-    """
+    """Free books and audiobooks (price 0), most downloaded first by default. Next: tg_book."""
     return await _browse(category, format, sort, False, True, None, cursor)
 
 
@@ -216,17 +199,23 @@ def _menu(html_text: str) -> dict[str, list[dict[str, Any]]]:
 @tool("Categories")
 async def tg_categories(
     format: Format = "any",
+    group: Annotated[
+        int | None,
+        Field(ge=1, description="Top-level group id from a previous call: only it, with sub-categories."),
+    ] = None,
 ) -> dict[str, Any]:
-    """Taaghche's category tree for ebooks and audiobooks: top-level groups (with their category id and the
-    sub-categories) and standalone categories, each with a slug.
+    """Category tree: top-level groups (id) and standalone categories, each with a slug.
 
-    Use to find the category for tg_browse / tg_bestsellers / tg_new_releases / tg_free_books: pass an
-    id or a slug. Ebook and audiobook trees have different slugs (audio slugs end in «-صوتی»).
+    Pass an id or slug to tg_browse and the other list tools. Ebook and audiobook slugs differ (audio ends in
+    «-صوتی»). Sub-categories need group=<id> (and format).
     """
     menu = _menu(await page("/"))
     if not menu["ebook"] and not menu["audiobook"]:
         raise ApiError("Could not read the category menu from taaghche.com (the page layout may have changed).")
-    return {k: v for k, v in menu.items() if format in ("any", k)}
+    menu = {k: v for k, v in menu.items() if format in ("any", k)}
+    if group is not None:
+        return {k: [c for c in v if c.get("id") == group] for k, v in menu.items()}
+    return {k: [{f: x for f, x in c.items() if f != "children"} for c in v] for k, v in menu.items()}
 
 
 async def _entity(
@@ -281,20 +270,17 @@ async def _entity(
 @tool("Author and books")
 async def tg_author(
     author: Annotated[
-        int | str,
-        Field(
-            description="Author slug (e.g. 'آنتوان-دوسنت-اگزوپری', from tg_book author_slugs) or numeric author id (e.g. 2072)."
-        ),
+        int | Slug,
+        Field(description="Author slug (e.g. 'آنتوان-دوسنت-اگزوپری', from tg_book author_slugs) or id (e.g. 2072)."),
     ],
     format: Format = "any",
     sort: Sort = "hot",
     max_price: MaxPrice = None,
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """An author's profile (nationality, life dates, biography; with a slug) and their books, 16 at a time.
+    """An author's profile (with a slug: nationality, life dates, bio) and their books, 16 per page.
 
-    Use for "books by X" or "audiobooks narrated from X's works". Sort and format like tg_browse; more
-    books: pass next_cursor back as cursor. Details of one book: tg_book.
+    Sort, format and max_price work like tg_browse. Next: tg_book.
     """
     return await _entity("author", AUTHOR, author, format, sort, max_price, cursor)
 
@@ -302,19 +288,16 @@ async def tg_author(
 @tool("Publisher and books")
 async def tg_publisher(
     publisher: Annotated[
-        int | str,
-        Field(
-            description="Publisher slug (e.g. 'کتاب-کوله-پشتی', from tg_book publisher_slug) or numeric publisher id (e.g. 113)."
-        ),
+        int | Slug,
+        Field(description="Publisher slug (e.g. 'کتاب-کوله-پشتی', from tg_book publisher_slug) or id (e.g. 113)."),
     ],
     format: Format = "any",
     sort: Sort = "hot",
     max_price: MaxPrice = None,
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """A publisher's description and its books, 16 at a time.
+    """A publisher's description and its books, 16 per page.
 
-    Use for "what does publisher X offer" / "cheapest books of X". Sort and format like tg_browse; more
-    books: pass next_cursor back as cursor. Details of one book: tg_book.
+    Sort, format and max_price work like tg_browse. Next: tg_book.
     """
     return await _entity("publisher", PUBLISHER, publisher, format, sort, max_price, cursor)

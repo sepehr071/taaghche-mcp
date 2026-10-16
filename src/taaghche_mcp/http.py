@@ -3,14 +3,16 @@
 Taaghche (taaghche.com) is a Next.js site whose data comes from a few public hosts: `get.taaghche.com`
 (book detail, comments, listings, search), `explore.taaghche.com` (search suggestions) and `quote.taaghche.com`
 (quotes). Every tool goes through `api` (JSON) or `page` (the home page HTML, only for the category menu).
-`_send` caps concurrency, retries once when the server drops the connection or answers 200 with an empty body,
-and turns HTTP failures into `ToolError` messages the model can act on.
+`_send` caps concurrency, retries once when the server drops the connection, answers 200 with an empty body or
+answers 429 / 502 / 503 (fixed short delay; GET only), caps the body size, and turns HTTP failures into `ToolError` messages the model can act on.
 """
 
 from __future__ import annotations
 
 import asyncio
 import os
+import re
+import time
 from typing import Any
 
 import httpx
@@ -30,10 +32,20 @@ HEADERS = {
 }
 
 MAX_CONCURRENCY = 4
+MAX_BYTES = 8_000_000  # book detail is ~600 KB; anything bigger is not an API reply
+RETRY_DELAY = 0.5
+RETRY_STATUS = (429, 502, 503)
 
 _transport: httpx.AsyncBaseTransport | None = None
 _client: httpx.AsyncClient | None = None
 _limit: asyncio.Semaphore | None = None
+
+# Short cache for the big payloads (book detail ~600 KB, home page) and the slug pages (keyed on all params);
+# prices may lag by CACHE_TTL. Entries are immutable responses: every caller parses its own copy.
+CACHE_TTL = 300
+CACHE_MAX = 32
+_CACHEABLE = re.compile(r"/v2/book/\d+$|^https://taaghche\.com/$")
+_cache: dict[tuple[str, tuple], tuple[float, httpx.Response]] = {}
 
 
 class ApiError(ToolError):
@@ -44,6 +56,7 @@ def set_transport(transport: httpx.AsyncBaseTransport | None) -> None:
     """Swap the transport (tests use httpx.MockTransport). Drops the current client."""
     global _transport, _client, _limit
     _transport, _client, _limit = transport, None, None
+    _cache.clear()
 
 
 def _get_client() -> tuple[httpx.AsyncClient, asyncio.Semaphore]:
@@ -54,7 +67,8 @@ def _get_client() -> tuple[httpx.AsyncClient, asyncio.Semaphore]:
         _client = httpx.AsyncClient(
             transport=_transport,
             headers=HEADERS,
-            timeout=30,
+            timeout=httpx.Timeout(30, connect=10),
+            limits=httpx.Limits(max_connections=8),
             follow_redirects=True,
             trust_env=False,
             proxy=os.environ.get("TAAGHCHE_MCP_PROXY") or None,
@@ -80,11 +94,40 @@ async def page(path: str = "/") -> str:
 
 
 async def _send(url: str, **kwargs: Any) -> httpx.Response:
+    params = kwargs.get("params") or {}
+    key = (url, tuple(sorted(params.items())))
+    cacheable = bool(_CACHEABLE.search(url)) or "slug" in params
+    hit = _cache.get(key) if cacheable else None
+    if hit and time.monotonic() - hit[0] < CACHE_TTL:
+        return hit[1]
+    r = await _fetch(url, **kwargs)
+    if cacheable and r.content.strip() not in (b"", b"null"):  # never cache unknown ids / empty bodies
+        if len(_cache) >= CACHE_MAX:
+            _cache.pop(next(iter(_cache)))
+        _cache[key] = (time.monotonic(), r)
+    return r
+
+
+async def _get(client: httpx.AsyncClient, url: str, **kwargs: Any) -> httpx.Response:
+    """GET with the body read in chunks and capped at MAX_BYTES."""
+    async with client.stream("GET", url, **kwargs) as r:
+        if int(r.headers.get("content-length") or 0) > MAX_BYTES:
+            raise ApiError("taaghche.com sent a reply that is too large.")
+        body = bytearray()
+        async for chunk in r.aiter_bytes():
+            body += chunk
+            if len(body) > MAX_BYTES:
+                raise ApiError("taaghche.com sent a reply that is too large.")
+        headers = [(k, v) for k, v in r.headers.items() if k.lower() not in ("content-encoding", "content-length")]
+        return httpx.Response(r.status_code, headers=headers, content=bytes(body), request=r.request)
+
+
+async def _fetch(url: str, **kwargs: Any) -> httpx.Response:
     client, limit = _get_client()
     for attempt in (1, 2):
         try:
             async with limit:
-                r = await client.get(url, **kwargs)
+                r = await _get(client, url, **kwargs)
         except httpx.TimeoutException as e:
             raise ApiError("taaghche.com did not answer in time. Try again in a moment.") from e
         except httpx.TransportError as e:
@@ -94,7 +137,8 @@ async def _send(url: str, **kwargs: Any) -> httpx.Response:
                     "or set TAAGHCHE_MCP_PROXY."
                 ) from e
             continue
-        if r.status_code == 200 and not r.content and attempt == 1:  # a retry works
+        if attempt == 1 and ((r.status_code == 200 and not r.content) or r.status_code in RETRY_STATUS):
+            await asyncio.sleep(RETRY_DELAY)
             continue
         break
     if r.status_code >= 400:

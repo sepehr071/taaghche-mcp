@@ -72,7 +72,6 @@ async def test_tg_suggest(client, api):
         "title": "شازده کوچولو",
         "label": "شازده کوچولو (انتشارات نگاه)",
         "format": "audiobook",
-        "in_subscription": None,
         "url": "https://taaghche.com/audiobook/72107",
     }
     assert out["suggestions"][2]["format"] == "ebook" and out["suggestions"][2]["in_subscription"] is True
@@ -100,7 +99,7 @@ async def test_tg_book_audiobook(client, api):
     assert out["format"] == "audiobook" and out["duration_min"] == 177 and "pages" not in out
     assert out["narrators"] == ["جمعی از گویندگان"] and out["translators"] == ["احمد شاملو"]
     assert out["audio_parts"][0] == {"title": "اجرای اول", "minutes": 86}
-    assert out["categories"][0]["slug"].endswith("-صوتی") and out["description"] is None
+    assert out["categories"][0]["slug"].endswith("-صوتی") and "description" not in out
     assert out["url"] == "https://taaghche.com/audiobook/72107"
 
 

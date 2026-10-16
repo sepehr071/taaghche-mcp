@@ -73,7 +73,7 @@ All 12 tools are annotated `readOnlyHint: true` and return compact structured JS
 
 | Tool | What it does |
 |---|---|
-| `tg_categories` | The category tree for ebooks and audiobooks with ids and slugs |
+| `tg_categories` | The top-level category tree for ebooks and audiobooks with ids and slugs; `group` adds one group's sub-categories |
 | `tg_browse` | A category or the whole catalog: format, sort, price ceiling, discounted, free; 16 per page |
 | `tg_bestsellers` | The hottest books («داغ‌ترین»), overall or per category and format |
 | `tg_new_releases` | Newest books, overall or per category and format |

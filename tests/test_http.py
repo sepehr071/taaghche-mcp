@@ -94,3 +94,55 @@ async def test_browser_user_agent_and_no_env_proxy(client, api, monkeypatch):
     result = await client.call_tool("tg_suggest", {"term": "شازده"})
     assert not result.is_error and "Chrome" in api.calls[0].headers["User-Agent"]
     assert api.hosts() == ["explore.taaghche.com"]
+
+
+async def test_book_detail_is_cached_but_null_is_not(client, api):
+    api["/v2/book/6426"] = fixture("book_ebook.json")
+    api["/v2/book/1"] = lambda request: httpx.Response(200, text="null")
+    for _ in range(2):
+        await client.call_tool("tg_book", {"book_id": 6426})
+        await client.call_tool("tg_book", {"book_id": 1})
+    assert [c.url.path for c in api.calls].count("/v2/book/6426") == 1
+    assert [c.url.path for c in api.calls].count("/v2/book/1") == 2
+
+
+async def test_raw_client_one_text_block_no_structured_content_no_output_schema(api):
+    from mcp import Client
+
+    from taaghche_mcp.server import mcp
+
+    api[HINT] = fixture("hint.json")
+    async with Client(mcp) as raw:  # the real client, without the conftest patch
+        assert all(t.output_schema is None for t in (await raw.list_tools()).tools)
+        result = await raw.call_tool("tg_suggest", {"term": "شازده"})
+    assert len(result.content) == 1 and result.content[0].type == "text"
+    assert result.structured_content is None
+    assert "\n" not in result.content[0].text and "null" not in result.content[0].text
+
+
+async def test_input_schemas_have_no_title_noise(client):
+    for t in (await client.list_tools()).tools:
+        assert "title" not in t.input_schema
+        assert all("title" not in p for p in t.input_schema["properties"].values()), t.name
+
+
+@pytest.mark.parametrize("status", [429, 503])
+async def test_busy_status_is_retried_once(client, api, status):
+    replies = iter([httpx.Response(status), httpx.Response(200, json=fixture("hint.json"))])
+    api[HINT] = lambda r: next(replies)
+    result = await client.call_tool("tg_suggest", {"term": "شازده"})
+    assert not result.is_error and len(api.calls) == 2
+
+
+async def test_oversized_reply_is_refused(client, api, monkeypatch):
+    monkeypatch.setattr("taaghche_mcp.http.MAX_BYTES", 100)
+    api[HINT] = lambda r: httpx.Response(200, content=b"[" + b"1," * 100 + b"1]")
+    result = await client.call_tool("tg_suggest", {"term": "شازده"})
+    assert result.is_error and "too large" in result.content[0].text
+
+
+async def test_slug_pages_are_cached_per_params(client, api):
+    api["/v2/everything"] = fixture("slug_category.json")
+    for slug in ("a", "a", "b"):
+        await client.call_tool("tg_browse", {"category": slug})
+    assert [c.url.params.get("slug") for c in api.calls if c.url.params.get("slug")] == ["category/a", "category/b"]

@@ -77,12 +77,13 @@ async def test_tg_categories(client, api):
     ebook = {c["title"]: c for c in out["ebook"]}
     assert ebook["کتاب رایگان"]["slug"] == "کتاب-رایگان"
     fiction = ebook["داستان و رمان"]
-    assert fiction["id"] == 58 and fiction["slug"] == "کتاب-داستان-و-رمان"
-    assert {"title": "داستان خارجی", "slug": "کتاب-داستان-خارجی"} in fiction["children"]
-    audio = {c["title"]: c for c in out["audiobook"]}
-    assert audio["ادبیات"]["children"] and all(c["slug"].endswith("صوتی") for c in audio["ادبیات"]["children"])
+    assert fiction["id"] == 58 and fiction["slug"] == "کتاب-داستان-و-رمان" and "children" not in fiction
+    out = (await client.call_tool("tg_categories", {"format": "ebook", "group": 58})).structured_content
+    assert [c["id"] for c in out["ebook"]] == [58] and list(out) == ["ebook"]
+    assert {"title": "داستان خارجی", "slug": "کتاب-داستان-خارجی"} in out["ebook"][0]["children"]
     out = (await client.call_tool("tg_categories", {"format": "audiobook"})).structured_content
     assert list(out) == ["audiobook"]
+    assert len(api.calls) == 1  # the home page is cached
 
 
 async def test_tg_categories_layout_changed(client, api):

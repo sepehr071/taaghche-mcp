@@ -16,15 +16,9 @@ MaxPrice = Annotated[int | None, Field(ge=0, description="Maximum price in Toman
 MinPrice = Annotated[int | None, Field(ge=0, description="Minimum price in Toman, e.g. 20000.")]
 Format = Annotated[
     Literal["any", "ebook", "audiobook"],
-    Field(description="ebook (الکترونیکی), audiobook (صوتی) or any."),
+    Field(description="ebook, audiobook or any."),
 ]
-Cursor = Annotated[
-    str | None,
-    Field(
-        pattern=r"^[0-9-]{1,40}$",
-        description="next_cursor of the previous reply, for the next page (keep the other arguments the same).",
-    ),
-]
+Cursor = Annotated[str | None, Field(pattern=r"^[0-9-]{1,40}$", description="next_cursor of the previous reply.")]
 
 # The site's sort ids of /v3/search/filters (`sortOptions`).
 SEARCH_SORTS = {"relevance": 0, "bestselling": 1, "shortest": 2, "cheapest": 3, "newest": 4, "popular": 5}
@@ -128,25 +122,19 @@ async def tg_search(
     format: Format = "any",
     sort: Annotated[
         Literal["relevance", "bestselling", "shortest", "cheapest", "newest", "popular"],
-        Field(
-            description="relevance, bestselling (پرفروش‌ترین), shortest, cheapest (ascending price), newest, popular."
-        ),
+        Field(description="cheapest = ascending price."),
     ] = "relevance",
-    discounted_only: Annotated[bool, Field(description="Only books with a discount now.")] = False,
-    free_only: Annotated[bool, Field(description="Only free books (price 0).")] = False,
-    subscription_only: Annotated[
-        bool, Field(description="Only books included in the Binahayat (بی‌نهایت) subscription.")
-    ] = False,
+    discounted_only: Annotated[bool, Field(description="Only discounted books.")] = False,
+    free_only: Annotated[bool, Field(description="Only free books.")] = False,
+    subscription_only: Annotated[bool, Field(description="Only Binahayat subscription books.")] = False,
     min_price: MinPrice = None,
     max_price: MaxPrice = None,
     cursor: Cursor = None,
 ) -> dict[str, Any]:
-    """Search Taaghche's ebooks and audiobooks by title, author or topic: price in Toman, discount, rating, format.
+    """Search ebooks and audiobooks by title, author or topic: price, discount, rating, format.
 
-    Use first for "find book X" / "is there an audiobook of X" / "cheapest edition of X". Price limits and
-    free_only are applied here to what the search returns (the site's search has no price filter), so
-    a narrow range may need several pages: pass next_cursor back as cursor (same other arguments). Details:
-    tg_book; opinions: tg_reviews; browse a category without words: tg_browse.
+    Price limits and free_only apply to the scanned results, so a narrow range may need next_cursor.
+    Next: tg_book for details, tg_browse for a category.
     """
     if min_price is not None and max_price is not None and min_price > max_price:
         raise ApiError("min_price is above max_price.")
@@ -179,12 +167,18 @@ async def tg_search(
         has_more, offset = bool(tab.get("hasMore")), str(tab.get("nextOffset") or "")
         if not has_more or not offset or len(items) >= 10:
             break
+    more = offset if has_more and offset else None
     return {
         "query": query,
         "count": len(items),
         "scanned": scanned,
         "items": items,
-        "next_cursor": offset if has_more and offset else None,
+        "next_cursor": more,
+        **(
+            {"note": f"Nothing matched in {scanned} scanned books; pass next_cursor to keep looking."}
+            if local and more and not items
+            else {}
+        ),
     }
 
 
@@ -192,10 +186,7 @@ async def tg_search(
 async def tg_suggest(
     term: Annotated[str, Field(min_length=3, max_length=60, description="Start of a title or author, e.g. 'شازده'.")],
 ) -> dict[str, Any]:
-    """Typeahead of the Taaghche search box: up to about 10 book titles (with publisher) that match the text.
-
-    Use to find the book id of a title quickly or to check how a title is spelled; for prices and filters use tg_search.
-    """
+    """Search-box typeahead: up to about 10 matching book titles with id and publisher. For prices use tg_search."""
     data = await api("/v3/hint", {"term": term}, host=EXPLORE)
     out = []
     for s in data.get("suggestions") or []:
@@ -228,11 +219,9 @@ async def tg_book(
         int, Field(ge=0, le=5000, description="Cut the description after this many characters.")
     ] = 800,
 ) -> dict[str, Any]:
-    """Everything about one book: price in Toman and discount, ebook or audiobook, pages or listening time, publisher,
-    author / translator / narrator, rating with breakdown, number of reviews, categories, ISBN, availability.
+    """One book: price, discount, format, pages or duration, people, rating breakdown, categories, ISBN.
 
-    Use after tg_search. Reviews: tg_reviews; similar books: tg_similar; the author's other books: tg_author
-    (author_slug); the publisher's: tg_publisher (publisher_slug).
+    Next: tg_reviews, tg_similar, tg_author (author_slugs), tg_publisher (publisher_slug).
     """
     data = await _book(book_id)
     b = data["book"]
@@ -282,18 +271,10 @@ async def tg_reviews(
     book_id: BookId,
     offset: Annotated[int, Field(ge=0, le=100_000, description="How many reviews to skip.")] = 0,
     limit: Annotated[int, Field(ge=1, le=40, description="Reviews per call.")] = 10,
-    reply_to: Annotated[
-        int | None, Field(ge=1, description="A review id: return the replies to that review instead.")
-    ] = None,
-    max_chars: Annotated[
-        int, Field(ge=100, le=3000, description="Cut each review text after this many characters.")
-    ] = 500,
+    reply_to: Annotated[int | None, Field(ge=1, description="Review id: return its replies instead.")] = None,
+    max_chars: Annotated[int, Field(ge=100, le=3000, description="Cut each review after this many characters.")] = 400,
 ) -> dict[str, Any]:
-    """Reader reviews of a book, most liked first: star rating, text, likes, number of replies.
-
-    Use after tg_book to see what readers think (total count = reviews_count). Page with offset. To read
-    the replies of one review pass its id as reply_to.
-    """
+    """Reader reviews, most liked first: rating, text, likes, reply count. Page with offset."""
     if reply_to:
         data = await api(f"/v2/comment/{reply_to}/replies", {"trackingData": TRACKING, "start": offset, "size": limit})
     else:
@@ -320,11 +301,7 @@ async def tg_reviews(
 
 @tool("Similar books")
 async def tg_similar(book_id: BookId) -> dict[str, Any]:
-    """Books Taaghche suggests next to this one (similar works, other books of the same author and publisher),
-    as separate lists with price, format and rating.
-
-    Use after tg_book to compare alternatives, e.g. another translation or the audiobook version.
-    """
+    """Related books as separate lists (similar works, same author, same publisher): price, format, rating."""
     data = await _book(book_id)
     groups = []
     for g in data.get("relatedBooks") or []:

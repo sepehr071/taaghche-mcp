@@ -9,8 +9,12 @@ API map this server is built on (endpoints, samples, quirks, test report): `../t
 
 - `src/taaghche_mcp/http.py`: the only HTTP code. One shared `httpx.AsyncClient` (`trust_env=False`, proxy only from
   `TAAGHCHE_MCP_PROXY`), a concurrency semaphore, `api(path, params, host=GET)` for JSON on `get.taaghche.com`
-  (or `EXPLORE`), `page(path)` for the home page HTML, one retry on dropped connections and on an empty 200 body,
-  `ApiError(ToolError)`, `set_transport()` for tests. Always sends `trackingData` where the site does (see quirks).
+  (or `EXPLORE`), `page(path)` for the home page HTML, one retry (0.5 s) on dropped connections, an empty 200 body
+  and 429 / 502 / 503, replies streamed and capped at 8 MB, a 5 min cache for `/v2/book/{id}`, the home page and
+  `slug=` pages (key = url + all params), `ApiError(ToolError)`, `set_transport()` for tests. Always sends `trackingData` where the site does (see quirks).
+- `server.py` also drops null fields from every result (except `next_cursor`), strips pydantic `title` noise from
+  the input schemas, and sends one compact text block (no structuredContent / outputSchema). Keep every `cover`,
+  `image` and `url` field: downstream apps read them. `tg_reviews` text is cut at `max_chars` (default 400).
 - `registry.py`: `@tool("Title")` collects tools. `server.py`: registers them with read-only annotations, holds `INSTRUCTIONS`.
 - Tools: `books.py` (search, suggest, book, reviews, similar; also the shared `_card` / `_prices` helpers) and
   `browse.py` (categories, browse, bestsellers, new releases, free books, author, publisher). 12 tools, all `tg_*`.
