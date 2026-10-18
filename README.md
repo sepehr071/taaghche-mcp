@@ -15,7 +15,7 @@ Covers about 220,000 Persian and translated ebooks and audiobooks on
 
 - **What:** Unofficial MCP server for Taaghche (طاقچه, taaghche.com), an Iranian ebook and audiobook store. Queries in Persian work best; prices in Toman.
 - **Install:** `claude mcp add taaghche -- uvx taaghche-mcp` (stdio, needs [uv](https://docs.astral.sh/uv/getting-started/installation/) and Python 3.10+).
-- **Auth:** none. Optional `TAAGHCHE_MCP_PROXY` sets an HTTP proxy for every request.
+- **Auth:** none. Optional `TAAGHCHE_MCP_PROXY` sets an HTTP proxy (or a comma-separated list) for every request.
 - **Access:** read-only. It cannot log in, buy, review or touch a library.
 - **Tools:** 12, all prefixed `tg_`. Start with `tg_search`, `tg_book`, `tg_reviews`, `tg_bestsellers`, `tg_free_books`.
 - **Typical sequence:** `tg_search` -> `tg_book` -> `tg_reviews` or `tg_similar`.
@@ -95,7 +95,7 @@ All 12 tools are annotated `readOnlyHint: true` and return compact structured JS
 
 | Variable | Default | Meaning |
 |---|---|---|
-| `TAAGHCHE_MCP_PROXY` | unset | HTTP proxy for every request, e.g. `http://user:pass@host:port` (system proxy variables are ignored) |
+| `TAAGHCHE_MCP_PROXY` | unset | HTTP proxy for every request, e.g. `http://user:pass@host:port` (system proxy variables are ignored). A comma-separated list is used one at a time: the next proxy takes over when one is blocked (403/429) or cannot connect |
 
 ## FAQ
 
@@ -140,8 +140,8 @@ or in the Taaghche app.
 export HTTPS_PROXY=http://127.0.0.1:10898 HTTP_PROXY=http://127.0.0.1:10898   # uv downloads only
 uv sync
 uv run ruff check . && uv run ruff format --check .
-uv run pytest -q            # offline, on recorded fixtures
-uv run pytest -m live -q    # real API
+uv run python -m pytest -q            # offline, on recorded fixtures
+uv run python -m pytest -m live -q    # real API
 ```
 
 If this saves you clicks, a star helps others find it.

@@ -1,9 +1,13 @@
+import asyncio
 import re
+import sys
 from pathlib import Path
 
 import httpx
 import pytest
 from conftest import fixture
+
+from taaghche_mcp import http
 
 pytestmark = pytest.mark.anyio
 
@@ -53,16 +57,16 @@ async def test_network_error_after_retry(client, api):
     api[HINT] = down
     result = await client.call_tool("tg_suggest", {"term": "شازده"})
     assert result.is_error and "Could not reach taaghche.com (ConnectError)" in result.content[0].text
-    assert len(api.calls) == 2
+    assert len(api.calls) == 3  # retried twice
 
 
-async def test_timeout_is_not_retried(client, api):
+async def test_timeout_is_retried_twice(client, api):
     def slow(request):
         raise httpx.ReadTimeout("timed out", request=request)
 
     api[HINT] = slow
     result = await client.call_tool("tg_suggest", {"term": "شازده"})
-    assert result.is_error and "did not answer in time" in result.content[0].text and len(api.calls) == 1
+    assert result.is_error and "did not answer in time" in result.content[0].text and len(api.calls) == 3
 
 
 @pytest.mark.parametrize(
@@ -88,11 +92,12 @@ async def test_non_json_reply(client, api):
     assert result.is_error and "non-JSON" in result.content[0].text
 
 
-async def test_browser_user_agent_and_no_env_proxy(client, api, monkeypatch):
+async def test_frontend_headers_and_no_env_proxy(client, api, monkeypatch):
     monkeypatch.setenv("HTTPS_PROXY", "http://127.0.0.1:1")  # must be ignored (trust_env=False)
     api[HINT] = fixture("hint.json")
     result = await client.call_tool("tg_suggest", {"term": "شازده"})
-    assert not result.is_error and "Chrome" in api.calls[0].headers["User-Agent"]
+    h = api.calls[0].headers
+    assert not result.is_error and h["Origin"] == "https://taaghche.com" and h["sec-fetch-mode"] == "cors"
     assert api.hosts() == ["explore.taaghche.com"]
 
 
@@ -146,3 +151,92 @@ async def test_slug_pages_are_cached_per_params(client, api):
     for slug in ("a", "a", "b"):
         await client.call_tool("tg_browse", {"category": slug})
     assert [c.url.params.get("slug") for c in api.calls if c.url.params.get("slug")] == ["category/a", "category/b"]
+
+
+def test_is_challenge():
+    html = {"content-type": "text/html"}
+    assert http._is_challenge(httpx.Response(403, text="<html>Just a moment...</html>", headers=html))
+    assert http._is_challenge(httpx.Response(503, text="<!doctype html><title>ArvanCloud</title>"))
+    assert not http._is_challenge(httpx.Response(403, text="<html>Access Denied</html>", headers=html))
+    assert not http._is_challenge(httpx.Response(403, json={"status": 403}))
+    assert not http._is_challenge(httpx.Response(200, text="<html></html>", headers=html))
+
+
+async def test_proxy_list_rotates_on_connect_error(monkeypatch, api):
+    monkeypatch.setenv("TAAGHCHE_MCP_PROXY", "http://p1:1, http://p2:2")
+    assert http._proxies() == ["http://p1:1", "http://p2:2"]
+
+    def boom(request):
+        raise httpx.ConnectError("down", request=request)
+
+    api[HINT] = boom
+    http._get_client()
+    with pytest.raises(http.ApiError):
+        await http.api(HINT, host=http.EXPLORE)
+    assert http._proxy_index >= 1 and len(api.calls) == 3
+
+
+async def test_stale_client_does_not_rotate(monkeypatch, api):
+    monkeypatch.setenv("TAAGHCHE_MCP_PROXY", "http://p1:1, http://p2:2")
+    old, _ = http._get_client()
+    http._next_proxy(old)
+    new, _ = http._get_client()
+    assert http._proxy_index == 1 and new is not old
+    http._next_proxy(old)  # a late failure on the retired client must not skip the proxy now in use
+    assert http._proxy_index == 1 and http._client is new
+
+
+async def test_challenge_cleared_by_browser_once(monkeypatch, api):
+    runs = []
+
+    async def fake_browser(proxy):
+        runs.append(proxy)
+        await asyncio.sleep(0.01)
+        return [{"name": "clearance", "value": "ok", "domain": ".taaghche.com", "path": "/"}]
+
+    monkeypatch.setattr(http, "_browser_cookies", fake_browser)
+
+    def guarded(request):
+        if "clearance=ok" not in request.headers.get("cookie", ""):
+            return httpx.Response(403, text="<html>Just a moment</html>", headers={"content-type": "text/html"})
+        return httpx.Response(200, json=[])
+
+    api[HINT] = guarded
+    await asyncio.gather(http.api(HINT, {"a": 1}), http.api(HINT, {"a": 2}))
+    assert len(runs) == 1  # the second caller reused the cookies the first one fetched
+
+
+async def test_challenge_without_patchright(monkeypatch, api):
+    monkeypatch.setitem(sys.modules, "patchright.async_api", None)  # makes the import fail
+    api[HINT] = lambda r: httpx.Response(403, text="<html>Just a moment</html>")
+    with pytest.raises(http.ApiError, match=r"taaghche-mcp\[browser\].*patchright install chromium"):
+        await http.api(HINT)
+
+
+async def test_retry_after_is_honoured_and_capped(monkeypatch, client, api):
+    waits = []
+
+    async def fake_sleep(s):
+        waits.append(s)
+
+    monkeypatch.setattr(http.asyncio, "sleep", fake_sleep)
+    hits = []
+
+    def limited(request):
+        hits.append(1)
+        if len(hits) == 1:
+            return httpx.Response(429, headers={"Retry-After": "3"})
+        if len(hits) == 2:
+            return httpx.Response(503, headers={"Retry-After": "999"})
+        return httpx.Response(200, json=fixture("hint.json"))
+
+    api[HINT] = limited
+    assert not (await client.call_tool("tg_suggest", {"term": "شازده"})).is_error
+    assert len(hits) == 3 and [w for w in waits if w] == [3, http.MAX_RETRY_WAIT]
+
+
+async def test_home_page_is_a_navigation_request(api):
+    api["/"] = "<html></html>"
+    await http.page()
+    h = api.calls[0].headers
+    assert h["sec-fetch-mode"] == "navigate" and "origin" not in h

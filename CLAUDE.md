@@ -7,10 +7,16 @@ API map this server is built on (endpoints, samples, quirks, test report): `../t
 
 ## Layout
 
-- `src/taaghche_mcp/http.py`: the only HTTP code. One shared `httpx.AsyncClient` (`trust_env=False`, proxy only from
-  `TAAGHCHE_MCP_PROXY`), a concurrency semaphore, `api(path, params, host=GET)` for JSON on `get.taaghche.com`
-  (or `EXPLORE`), `page(path)` for the home page HTML, one retry (0.5 s) on dropped connections, an empty 200 body
-  and 429 / 502 / 503, replies streamed and capped at 8 MB, a 5 min cache for `/v2/book/{id}`, the home page and
+- `src/taaghche_mcp/http.py`: the only HTTP code. One shared `httpx.AsyncClient` (`trust_env=False`) on a
+  `httpx_curl_cffi.AsyncCurlTransport(impersonate="chrome")`, so TLS, HTTP/2 and the default headers (User-Agent,
+  sec-ch-ua*) come from one Chrome profile; we send no User-Agent of our own, only `Accept-Language` and the web app's XHR
+  headers (Origin / Referer / sec-fetch-*). Proxy only from `TAAGHCHE_MCP_PROXY`, a comma-separated list used one at a time
+  (rotate on 403 / 429 / challenge / connect error). Concurrency 2, 150-600 ms jitter before each uncached call, up to 2
+  retries with jittered backoff and `Retry-After` (cap 10 s) on timeouts, network errors, an empty 200 body, 429 and 5xx;
+  403 is never retried. A bot-check page (`_is_challenge`) falls back to a headless patchright browser (optional extra
+  `taaghche-mcp[browser]`, then `patchright install chromium`) whose cookies are copied into the client. Also
+  `api(path, params, host=GET)` for JSON on `get.taaghche.com` (or `EXPLORE`), `page(path)` for the home page HTML,
+  replies streamed and capped at 8 MB, a 5 min cache for `/v2/book/{id}`, the home page and
   `slug=` pages (key = url + all params), `ApiError(ToolError)`, `set_transport()` for tests. Always sends `trackingData` where the site does (see quirks).
 - `server.py` also drops null fields from every result (except `next_cursor`), strips pydantic `title` noise from
   the input schemas, and sends one compact text block (no structuredContent / outputSchema). Keep every `cover`,
@@ -27,8 +33,8 @@ API map this server is built on (endpoints, samples, quirks, test report): `../t
 export HTTPS_PROXY=http://127.0.0.1:10898 HTTP_PROXY=http://127.0.0.1:10898   # uv downloads only
 uv sync
 uv run ruff check . && uv run ruff format --check .
-uv run pytest -q            # unit tests, offline
-uv run pytest -m live -q    # one live test per tool, about 10 s
+uv run python -m pytest -q            # unit tests, offline (not `uv run pytest`: uv trampoline error on this machine)
+uv run python -m pytest -m live -q    # one live test per tool, about 10 s
 ```
 
 ## Rules for changes
@@ -41,7 +47,7 @@ uv run pytest -m live -q    # one live test per tool, about 10 s
 - New tool: `@tool("Title")` async function, every param `Annotated[..., Field(...)]` with constraints and an example,
   docstring = what it returns + when to use + what to call next, compact dict output. Add a unit test with a real
   trimmed fixture, a live test, a README tool-table row, and an `INSTRUCTIONS` mention.
-- Keep `README.md` tool tables equal to `list_tools()` (a unit test checks it). Deps stay `mcp` + `httpx` only.
+- Keep `README.md` tool tables equal to `list_tools()` (a unit test checks it). Deps stay `mcp`, `httpx`, `httpx-curl-cffi` + `curl-cffi`; `patchright==1.63.0` only in the optional `browser` extra.
 - ZWNJ in code is written `‌`, never the invisible character.
 
 ## Taaghche quirks (keep them)
