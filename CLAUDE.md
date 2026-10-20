@@ -1,7 +1,7 @@
 # taaghche-mcp
 
 Unofficial, read-only MCP server for Taaghche (taaghche.com), an Iranian ebook and audiobook store (about 220,000 titles).
-Not published yet (no git repo, no PyPI / registry entry). It is a sibling of `../shopino-mcp` and copies its layout and idioms; keep them in step.
+Published: GitHub `sepehr071/taaghche-mcp`, PyPI `taaghche-mcp`, MCP Registry `io.github.sepehr071/taaghche-mcp`, listed in `../../awesome-iran-mcp`. It is a sibling of `../shopino-mcp` and copies its layout and idioms; keep them in step.
 
 API map this server is built on (endpoints, samples, quirks, test report): `../taaghche/`.
 
