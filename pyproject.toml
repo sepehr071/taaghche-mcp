@@ -35,6 +35,7 @@ Homepage = "https://github.com/sepehr071/taaghche-mcp"
 Source = "https://github.com/sepehr071/taaghche-mcp"
 Changelog = "https://github.com/sepehr071/taaghche-mcp/releases"
 Issues = "https://github.com/sepehr071/taaghche-mcp/issues"
+Website = "https://mcpfarsi.ir/servers/taaghche/"
 
 [project.scripts]
 taaghche-mcp = "taaghche_mcp.server:main"

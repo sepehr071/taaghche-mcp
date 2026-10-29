@@ -12,6 +12,7 @@ from Claude, Cursor or Copilot. Prices in Toman, no API key, no account.
 [![CI](https://github.com/sepehr071/taaghche-mcp/actions/workflows/ci.yml/badge.svg)](https://github.com/sepehr071/taaghche-mcp/actions/workflows/ci.yml)
 [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.sepehr071%2Ftaaghche--mcp-7c3aed)](https://registry.modelcontextprotocol.io/?q=taaghche-mcp)
 [![License: MIT](https://img.shields.io/badge/license-MIT-16a34a)](https://github.com/sepehr071/taaghche-mcp/blob/main/LICENSE)
+[![mcpfarsi](https://mcpfarsi.ir/badge/taaghche.svg)](https://mcpfarsi.ir/servers/taaghche/)
 
 [![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_taaghche--mcp-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=taaghche&config=%7B%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22taaghche-mcp%22%5D%7D)
 
@@ -355,6 +356,7 @@ Releases: bump the version in `pyproject.toml` and `server.json`, then push a `v
 - [30book-mcp](https://github.com/sepehr071/30book-mcp) for printed Iranian and foreign books
 - [digikala-mcp](https://github.com/sepehr071/digikala-mcp) for prices and sellers on Digikala
 - [torob-mcp](https://github.com/sepehr071/torob-mcp) for price comparison across Iranian shops
+- Listed on [mcpfarsi.ir](https://mcpfarsi.ir/servers/taaghche/), the Persian MCP marketplace
 
 ## Disclaimer
 
