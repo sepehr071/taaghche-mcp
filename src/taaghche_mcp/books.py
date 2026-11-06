@@ -11,14 +11,11 @@ from pydantic import Field
 from .http import EXPLORE, SITE, TRACKING, ApiError, api
 from .registry import tool
 
-BookId = Annotated[int, Field(ge=1, le=100_000_000, description="Book id (from tg_search), e.g. 6426 or 72107.")]
-MaxPrice = Annotated[int | None, Field(ge=0, description="Maximum price in Toman, e.g. 100000.")]
-MinPrice = Annotated[int | None, Field(ge=0, description="Minimum price in Toman, e.g. 20000.")]
-Format = Annotated[
-    Literal["any", "ebook", "audiobook"],
-    Field(description="ebook, audiobook or any."),
-]
-Cursor = Annotated[str | None, Field(pattern=r"^[0-9-]{1,40}$", description="next_cursor of the previous reply.")]
+BookId = Annotated[int, Field(ge=1, le=100_000_000, description="Book id, e.g. 6426.")]
+MaxPrice = Annotated[int | None, Field(ge=0, description="Max price, Toman.")]
+MinPrice = Annotated[int | None, Field(ge=0, description="Min price, Toman.")]
+Format = Literal["any", "ebook", "audiobook"]
+Cursor = Annotated[str | None, Field(pattern=r"^[0-9-]{1,40}$", description="Previous next_cursor.")]
 
 # The site's sort ids of /v3/search/filters (`sortOptions`).
 SEARCH_SORTS = {"relevance": 0, "bestselling": 1, "shortest": 2, "cheapest": 3, "newest": 4, "popular": 5}
@@ -115,26 +112,23 @@ def _card(book: dict[str, Any]) -> dict[str, Any]:
 async def tg_search(
     query: Annotated[
         str,
-        Field(
-            min_length=2, max_length=100, description="Title, author or topic, Persian works best, e.g. 'شازده کوچولو'."
-        ),
+        Field(min_length=2, max_length=100, description="Title, author or topic, e.g. 'شازده کوچولو'."),
     ],
     format: Format = "any",
     sort: Annotated[
         Literal["relevance", "bestselling", "shortest", "cheapest", "newest", "popular"],
         Field(description="cheapest = ascending price."),
     ] = "relevance",
-    discounted_only: Annotated[bool, Field(description="Only discounted books.")] = False,
-    free_only: Annotated[bool, Field(description="Only free books.")] = False,
-    subscription_only: Annotated[bool, Field(description="Only Binahayat subscription books.")] = False,
+    discounted_only: bool = False,
+    free_only: bool = False,
+    subscription_only: bool = False,
     min_price: MinPrice = None,
     max_price: MaxPrice = None,
     cursor: Cursor = None,
 ) -> dict[str, Any]:
     """Search ebooks and audiobooks by title, author or topic: price, discount, rating, format.
 
-    Price limits and free_only apply to the scanned results, so a narrow range may need next_cursor.
-    Next: tg_book for details, tg_browse for a category.
+    Price limits and free_only filter scanned results; a narrow range may need next_cursor.
     """
     if min_price is not None and max_price is not None and min_price > max_price:
         raise ApiError("min_price is above max_price.")
@@ -184,9 +178,9 @@ async def tg_search(
 
 @tool("Search suggestions")
 async def tg_suggest(
-    term: Annotated[str, Field(min_length=3, max_length=60, description="Start of a title or author, e.g. 'شازده'.")],
+    term: Annotated[str, Field(min_length=3, max_length=60, description="Start of a title or author.")],
 ) -> dict[str, Any]:
-    """Search-box typeahead: up to about 10 matching book titles with id and publisher. For prices use tg_search."""
+    """Typeahead: up to 10 matching book titles with id. For prices use tg_search."""
     data = await api("/v3/hint", {"term": term}, host=EXPLORE)
     out = []
     for s in data.get("suggestions") or []:
@@ -215,13 +209,11 @@ async def _book(book_id: int) -> dict[str, Any]:
 @tool("Book details")
 async def tg_book(
     book_id: BookId,
-    description_chars: Annotated[
-        int, Field(ge=0, le=5000, description="Cut the description after this many characters.")
-    ] = 800,
+    description_chars: Annotated[int, Field(ge=0, le=5000, description="Description length cap.")] = 800,
 ) -> dict[str, Any]:
-    """One book: price, discount, format, pages or duration, people, rating breakdown, categories, ISBN.
+    """One book: price, format, pages or duration, people, rating breakdown, categories, ISBN.
 
-    Next: tg_reviews, tg_similar, tg_author (author_slugs), tg_publisher (publisher_slug).
+    Gives author_slugs and publisher_slug for tg_author / tg_publisher.
     """
     data = await _book(book_id)
     b = data["book"]
@@ -269,10 +261,10 @@ async def tg_book(
 @tool("Book reviews")
 async def tg_reviews(
     book_id: BookId,
-    offset: Annotated[int, Field(ge=0, le=100_000, description="How many reviews to skip.")] = 0,
-    limit: Annotated[int, Field(ge=1, le=40, description="Reviews per call.")] = 10,
-    reply_to: Annotated[int | None, Field(ge=1, description="Review id: return its replies instead.")] = None,
-    max_chars: Annotated[int, Field(ge=100, le=3000, description="Cut each review after this many characters.")] = 400,
+    offset: Annotated[int, Field(ge=0, le=100_000, description="Reviews to skip.")] = 0,
+    limit: Annotated[int, Field(ge=1, le=40, description="Reviews per page.")] = 10,
+    reply_to: Annotated[int | None, Field(ge=1, description="Review id: its replies instead.")] = None,
+    max_chars: Annotated[int, Field(ge=100, le=3000, description="Per-review length cap.")] = 400,
 ) -> dict[str, Any]:
     """Reader reviews, most liked first: rating, text, likes, reply count. Page with offset."""
     if reply_to:
@@ -301,7 +293,7 @@ async def tg_reviews(
 
 @tool("Similar books")
 async def tg_similar(book_id: BookId) -> dict[str, Any]:
-    """Related books as separate lists (similar works, same author, same publisher): price, format, rating."""
+    """Related books in lists (similar works, same author, same publisher): price, format, rating."""
     data = await _book(book_id)
     groups = []
     for g in data.get("relatedBooks") or []:
