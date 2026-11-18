@@ -180,26 +180,6 @@ All 12 tools are annotated `readOnlyHint: true` and return compact JSON.
 | `tg_author` | An author's profile (nationality, life dates, bio) and their books, 16 per page |
 | `tg_publisher` | A publisher's description and its books, 16 per page |
 
-## How it works
-
-```text
-  AI agent  (Claude, Cursor, Copilot, ...)
-      │
-      │  MCP over stdio
-      ▼
-  taaghche-mcp  (runs on your machine)
-      │
-      │  HTTPS
-      ├──────▶  get.taaghche.com       books, reviews, lists, search
-      ├──────▶  explore.taaghche.com   title suggestions
-      └──────▶  taaghche.com           home page (category menu)
-```
-
-`taaghche-mcp` runs locally and calls the same public endpoints the taaghche.com website uses. There is no hosted
-server in between and no API key. Requests go out through a Chrome-impersonating client, at most 2 at a time with a
-little jitter. Book pages, the home page and slug pages are cached for 5 minutes, and a failed request is retried up to twice.
-It only reads.
-
 ## Good to know
 
 - **Prices are in Toman.** The API returns Toman (book 6426 is `58500` in the API and `۵۸,۵۰۰ تومان` on the page). `final_price` is what you pay, `price` is before discount, `discount_pct` a whole percent, `free` is true for 0.
